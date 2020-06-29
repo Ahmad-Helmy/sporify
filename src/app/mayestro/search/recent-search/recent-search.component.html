@@ -1,0 +1,17 @@
+<!-- <div class="p-2" *ngIf="card">
+    <a [routerLink]="card.type==='artist'?['/mayestro/search/artist',card.ID]:['/mayestro/search/playlist',card.ID,card.type]"
+      class="card card-deck">
+      <img [ngClass]="{'rounded-circle':card.type==='artist'}" class="card-img-top" [src]="card.imgUrl" alt="Card image">
+      <button class="exit"><i class="fa fa-times ic"></i></button>
+      <div class="card-body p-0 pt-2">
+        <h4 class="card-title txt mb-1"> {{card.name}} </h4>
+        <button class="stretch-link btn "><i class="fa fa-play"></i></button>
+        <p class="card-text"> {{card?.description}} </p>
+      </div>
+    </a>
+</div> -->
+<div class="row" *ngIf="recent">
+  <div class="col-12">
+    <mini-card-viewer [search]='true' [category]="recent"></mini-card-viewer>
+  </div>
+</div>

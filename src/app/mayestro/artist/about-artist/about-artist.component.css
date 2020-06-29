@@ -1,0 +1,13 @@
+.spancontent {
+   
+    font-size: 16px;
+    line-height: 16px;
+    /* font-weight: var(--glue-font-weight-normal); */
+    color: #e0dddd;
+    /* letter-spacing: .16em; */
+    margin-top: 5%;
+    opacity: .6;
+    display: inline-block;
+    line-break: auto;
+   
+}

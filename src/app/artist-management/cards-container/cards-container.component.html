@@ -1,0 +1,9 @@
+<div class="row">
+    <h1 class="col-11">{{title}}:</h1>
+    <button (click)="showMore()" class="btn text-white col-1">show 3 more</button>
+</div>
+<div class="row">
+    <div *ngFor="let card of cards|slice:0:end" class="col-4 mt-3">
+        <app-card [card]="card" [type]="type"></app-card>
+    </div>
+</div>

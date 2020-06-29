@@ -1,0 +1,26 @@
+
+.mat-button {
+    position: relative;
+    left: 60px;
+    background: #1db954;
+    padding: 8px 34px;
+    font-size: 16px;
+    color: #ffffff;
+    border-radius: 20px;
+    border: #343a40;
+    font: arial;
+    outline: 0;
+    margin-left: 20px;
+}
+
+
+
+.cancel-button{
+    background-color:rgb(61, 60, 60);
+    color:#ffffff;
+    border: none;
+    position: relative;
+    left:180px;
+    outline: none;
+    font-size: 20px;
+}

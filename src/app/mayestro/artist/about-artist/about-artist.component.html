@@ -1,0 +1,19 @@
+<div style="margin-bottom:70px">
+
+  <div style=" margin: 24px,8px; padding-left: 24px; color: white;">
+      <div class="row" style="margin-top: -20px;">
+          <div class="col-8" style="padding-right: 50px;" >
+            <h2 style="height: 11px; padding-top: 5%;">Biography</h2>
+            <p class="spancontent" style=" line-height: 170%; ">{{artistInfo}}</p>
+          </div>
+          <div class="col-sm-2" style="padding-top: 5%; padding-bottom: 5%;">
+            <div style="height: 11px; font-size:1.5vw; padding-bottom: 32px;" class="row">Where people listen</div>
+            <div  *ngFor="let l of listners">
+              <h2 style="height: 11px;">{{l.country}}</h2>
+              <span class="spancontent" style="  margin-bottom:10%"> {{ l.number}} monthly listeners</span>
+            </div>
+           
+          </div>
+      </div>
+  </div>
+</div>

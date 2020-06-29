@@ -1,0 +1,9 @@
+.head {
+  height: 110px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border: 1px solid #d9dadc;
+}
+.content {
+  min-height: 640px;
+}

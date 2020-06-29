@@ -1,0 +1,73 @@
+.premium{
+    height: 40%;
+    background-color: rgb(247, 195, 212);
+    padding:35px 15px;
+}
+
+
+
+.prem-button{
+    width: 180px;
+    height: 50px;
+    color:white;
+    border-radius: 25px;
+    background-color:#1DB954;
+    border: steelblue;
+    outline: none;
+    margin: 20px;
+}
+.more-button{
+    width: 180px;
+    height: 50px;
+    color:black;
+    border-radius: 25px;
+    background-color:rgb(247, 195, 212);
+    border-color: black; 
+    outline: none;
+}
+
+.launch-button{
+    
+    width: 280px;
+    height: 50px;
+    color:#757575;
+    border-radius: 25px;
+    background-color:#ffffff;
+    border:  2px solid #757575;
+    outline: none;
+    margin-top: 20px;
+}
+
+.listen{
+    padding-bottom: 20px; 
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+img{
+    height: 90%;
+    width: 90%;
+}
+
+.head{
+     
+    height: 40%;
+    text-align: center;
+}
+
+h1{
+    line-height: normal;
+    font-size: 80px; 
+    font-weight: bold;
+}
+.h{
+    line-height: normal;
+    font-weight: bold;
+    margin-left: 200px;
+}
+.p{
+    font-size:16px;
+    margin-left: 150px;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+.container-fluid {
+  /* width: 100%; */
+  background-color: rgb(18, 18, 18);
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+}

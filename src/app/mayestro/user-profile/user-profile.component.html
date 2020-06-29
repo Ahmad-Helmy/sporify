@@ -1,0 +1,11 @@
+<div style="padding-bottom: 32px;">
+    <div class="text-center" style="padding: 32px;">
+        <img [src]="user.image" alt="Avatar" class="avatar">
+        <h1 style="padding-top: 32px; color: white; font-size: 36px;  font-weight: bold; ">{{user.name}}</h1>
+    </div>
+    <div style="padding-bottom: 32px; padding-left: 20px; padding-right: 20px;">
+        <div class="row px-4">
+            <div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let l of playListArray"><app-card [card]="l" ></app-card></div>
+        </div>
+    </div>
+</div>

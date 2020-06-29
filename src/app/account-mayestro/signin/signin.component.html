@@ -1,0 +1,69 @@
+<div class="signin container">
+  <div class="row">
+    <h5 class="col-12 text-center h5 mb-3">To continue, log in to Spotify.</h5>
+  </div>
+  <div *ngIf='errMsg' class="row alert alert-danger bg-danger">
+    <p class="col-12 mb-0 text-white">{{errMsg}}</p>
+  </div>
+  <div class="row">
+    <button (click)="signInWithFB()" disabled class="col-12 mb-2 facebook-btn custom-btn btn text-white"><i
+        class="fa fa-facebook"></i> continue with facebook</button>
+  </div>
+  <div class="row text-center">
+    <h3 class="col-12 or h3 font-weight-bold">OR</h3>
+  </div>
+  <form #f="ngForm" class="form-group d-block" (ngSubmit)="submit(f)">
+    <div class="row">
+      <div class="col-12">
+        <mat-form-field class="w-100">
+          <mat-label>Email or username</mat-label>
+          <input type="text" matInput ngModel required name="email" #email="ngModel">
+          <mat-error *ngIf="email.errors">
+            <span *ngIf="email.errors.required">Please enter your email.</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <mat-form-field class="w-100">
+          <mat-label>password</mat-label>
+          <input type="password" matInput required minlength="8" maxlength="80" ngModel name="password"
+            #password="ngModel">
+          <mat-error *ngIf="password.errors">
+            <span *ngIf="password.errors.required">Enter a password to continue.</span>
+            <span *ngIf="password.errors.minlength">Your password is too short.</span>
+            <span *ngIf="password.errors.maxlength">Your password is too long.</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <mat-checkbox class=" w-100 mt-2"><span class="remember">Remember me!</span></mat-checkbox>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+        <button type="submit" [disabled]='invalid(f)'
+          class="login-btn w-100 custom-btn btn text-white float-right">login</button>
+      </div>
+    </div>
+  </form>
+  <div class="row text-center pb-3">
+    <a class="col-12 forgot-password" routerLink='/account.mayestro/forget-password'>Forgot your password?</a>
+  </div>
+  <hr>
+  <div class="row pt-3">
+    <h4 class="font-weight-bolder m-auto">Don't have an account?</h4>
+  </div>
+  <div class="row pt-4">
+    <a [routerLink]="['/account.mayestro/signup']" class="col-12 mb-2 custom-btn signub-btn btn">
+      sign up for mayestro</a>
+  </div>
+  <hr>
+  <div class="row">
+    <p>If you click "Log in with Facebook" and are not a Spotify user, you will be registered and you agree to Spotify's
+      <a class="imp-text" target="_blank" href="https://www.spotify.com/eg-en/legal/end-user-agreement/plain/">Terms &
+        Conditions</a> and <a class="imp-text" routerLink='../privacy-and-policy'>Privacy Policy.</a>
+    </p>
+  </div>
+</div>

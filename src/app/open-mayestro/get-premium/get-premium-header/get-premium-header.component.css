@@ -1,0 +1,22 @@
+
+.headerdiv{
+    font-family: Circular, Helvetica, Arial, sans-serif;
+    padding: 80px 20px 100px 20px;
+    text-align: center;
+    background-image: linear-gradient(-180deg, #5BB8F7 0%, #3794D1 100%);
+    color: #FFF;
+}
+
+.l::before{
+    font-size: 16px;
+    content: "✓";
+    font-weight: 700;
+    padding: 0px 12px 0px 0px;
+  }
+
+.l{
+    padding-bottom: 7px;
+    display: inline;
+    font-weight:400;
+    margin: 0 16px;
+}

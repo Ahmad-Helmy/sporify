@@ -1,0 +1,46 @@
+.queue{
+    color: white;
+    font-size: 2.5vw;
+    margin-left: 35px;
+    margin-top: 25px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+}
+.now {
+    color: white;
+    font-size: 1.6vw;
+    margin-left: 35px;
+    margin-top: 25px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+
+}
+.next{
+    color: white;
+    font-size: 1.6vw;
+    margin-left: 35px;
+    margin-top: 25px;
+    line-height: 1.6;
+    font-weight: 600;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+
+
+}
+.track{
+
+    padding: 10px 10px; 
+   margin-left:50px ;
+   font-size: 1.2vw;
+   font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+   }
+   .Queue{
+    min-height: 1000px;
+   }
+   .tracks{
+    /* padding: 10px 10px;  */
+    margin-left:15px ;
+    font-size: 1.2vw;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+   }

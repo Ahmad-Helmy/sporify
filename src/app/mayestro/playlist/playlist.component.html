@@ -1,0 +1,35 @@
+<div class="main-view">
+    <div class="row">
+        <div clas="col-6">
+            <div class="playlist-content">
+                <img style="height: 237px; width: 207px;" src={{imageURL}}>
+                <h2 style="color: white; text-align: center; width: 207px;">{{title}}</h2>
+
+                <a class="nav-link" style=" color: rgb(245, 245, 245); width: 207px;" href="#">{{artist}}</a>
+
+                <button class="play-button" type="button" *ngIf="this.playerservice.player"
+                    (click)="play()">Play</button>
+                <button class="play-button" type="button" *ngIf="!this.playerservice.player"
+                    (click)="pause()">Pause</button>
+                <br>
+                <button class="like-button"><i (click)="like()"
+                        [style.-webkit-text-fill-color]="isLiked ? 'rgb(18,18,18)' : 'rgb(25, 206, 88)' "
+                        [style.color]="isLiked ? 'white' : 'rgb(25, 206, 88)' " class="fa fa-heart"></i></button>
+						
+                 <button mat-button [matMenuTriggerFor]="menu" class="more-button" type="button">...</button>
+                <mat-menu #menu="matMenu" class="dropdownmenu">
+                    <button mat-menu-item *ngIf="type=='album'" class="text-white" style="outline: 0;" (click)="add()">Save to Your Library</button>
+                    <button mat-menu-item *ngIf="type=='playlist'" class="text-white" style="outline: 0;" (click)="addList()">Save to Your Library</button>
+                    <a style="text-decoration: none;"routerLink="/mayestro/yourlibrary/playlists"><button mat-menu-item *ngIf="type=='myplaylist'" class="text-white" style="outline: 0;" (click)="remove()">Delete</button>
+                    </a>
+                    </mat-menu>
+                <p style="text-align: center; color: white">{{year}} - {{totalTracks}} songs</p>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <app-track></app-track>
+            <div style="height: 75px;"></div>
+        </div>
+    </div>
+</div>

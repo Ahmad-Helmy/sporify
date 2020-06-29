@@ -1,0 +1,28 @@
+.table-hover:hover{
+    background-color:rgb(44, 44, 44);
+}
+.table-hover:hover .song-more-btn{
+    background-color:rgb(44, 44, 44);
+    visibility: visible;   
+}
+
+.song-name{
+
+    width: 75%;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .015em;
+    color: #fff;
+}
+
+.song-more-btn{
+    visibility: hidden;    
+    font-size: 30px;
+    /* background-color: rgb(44, 44, 44); */
+    background-color: #121212;
+    border: none;
+    color:white;
+    width: 48px;
+    height: 48px;
+    margin-right: 60px;
+}

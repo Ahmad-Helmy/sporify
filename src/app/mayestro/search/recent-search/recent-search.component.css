@@ -1,0 +1,104 @@
+.text{
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.6;
+    font-weight: 600;
+    letter-spacing: -.36px;
+    display: inline;
+    white-space: nowrap;
+    margin-left: 3%;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    flex: 1 0 80%;
+}
+.img {
+    flex: 60%;
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+    position: relative;
+    padding: 20px 20px 16px;
+    border-radius: 8px;
+    isolation: isolate;
+    box-sizing: border-box;
+    min-height: 70%;
+    cursor: pointer;
+    z-index: 5;
+    text-decoration: none;
+  }
+  .card-body {
+    height: 100px;
+    color: rgb(18, 18, 18);
+    color: #b3b3b3;
+    font-family: Helvetica, Arial, sans-serif;
+    word-break: break-all;
+  }
+  .btn {
+    display: none;
+    background-color: #1db954;
+    border: none;
+    border-radius: 50%;
+    /* height: 50%;
+    width: 40%; */
+    flex: 30%;
+    z-index: 7;
+    transform: scale(1.06);
+    transition: all transform 33ms cubic-bezier(0.3, 0, 0, 1);
+    right: 5%;
+    bottom: 5%;
+    float: right;
+  }
+  .ic {
+    color: #fff;
+    object-position: center;
+  }
+  .card:hover .btn {
+    display: inline;
+    position: absolute;
+  }
+  .btn:hover {
+    transform: scale(1.06);
+  }
+  .txt {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .exit{
+    border: none;
+    right: 5%;
+    /* top: 5%; */
+    flex: 40%;
+    float: right;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    transform: scale(1.06);
+    transition: all transform 33ms cubic-bezier(0.3, 0, 0, 1);
+  }
+  .ex{
+      color:rgb(0,0,0,.3);
+  }
+  .exit:hover {
+    transform: scale(1.06);
+    cursor: auto;
+  }
+
+  

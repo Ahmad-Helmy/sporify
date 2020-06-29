@@ -1,0 +1,119 @@
+.flexnav{
+    direction: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: rgba(0,0,0,.8);
+    min-height: 700px;
+}
+
+.brand{
+    font-size: 30px;
+    box-sizing: border-box;
+    font-weight: 400;
+    letter-spacing: .21px;
+    line-height: 20px;
+    font-family: Arial;
+    padding: 18px;
+}
+
+.n-list{
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 700;
+    letter-spacing: .21px;
+    line-height: 20px;
+    text-align: left;
+    color: #b3b3b3;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    vertical-align: baseline;
+    list-style: none;
+    margin-left: 0px;
+    padding-top:5px;
+    padding-bottom: 3px;
+}
+
+.playlist{
+    letter-spacing: 1.76px;
+    line-height: 16px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #b3b3b3;
+    margin-top: 20px;
+}
+.divider{
+    border-bottom-color: rgb(40,40,40);
+    border-bottom-width: 1px;
+    border-bottom-style: inset;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    font-weight: var(--glue-font-weight-normal);
+    /* color: #b3b3b3; */
+    text-transform: none;
+    font-family: spotify-circular,spotify-circular-cyrillic,spotify-circular-arabic,spotify-circular-hebrew,Helvetica Neue,Helvetica,Arial,Hiragino Kaku Gothic Pro,Meiryo,MS Gothic,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    cursor: default;
+    -webkit-box-direction: normal;
+    box-sizing: border-box;
+    margin: 8px var(--left-sidebar-padding-right) 8px var(--left-sidebar-padding-left);
+    /* border-color: #282828; */
+}
+
+::ng-deep .mat-dialog-container{
+    color: #ffffff;
+    
+    background-color:rgb(61, 60, 60);
+
+  }
+  .Download{
+    color: white;
+    /* background-color:#282828; */
+    overflow: hidden;
+    outline: none;
+    text-decoration: none;
+}
+.install{
+  /* margin-top: 5%; */
+  background-color:rgba(0,0,0,.8); 
+  line-height: 28px;
+  font-weight: 650;
+  letter-spacing: 1.2px;
+  border: 6px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 97%;
+  font-size: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-bold.woff2");
+  text-decoration: none;
+  outline: none;
+}
+.fa-download
+{
+  color: white;
+}
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,.8);
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: rgba(0,0,0,.8);
+}
+
+::-webkit-scrollbar-thumb
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+

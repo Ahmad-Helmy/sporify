@@ -1,0 +1,43 @@
+.card-container{
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 206px;
+    height: 241px;
+    display: inline-block;
+}
+
+.card-body{
+    height: 51px;
+
+}
+
+  .album-name{
+    /* padding-top: 12px; */
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    color: #fff;
+    text-transform: none;
+    text-align: center;
+  }
+
+ .btn{
+    visibility: hidden;
+    color: white;
+    transform: translate(50%, -220%);
+    background: transparent;
+    font-size: 70px;
+    border: none;
+    
+}
+.card:hover .btn{
+    visibility: visible; 
+}
+
+a:hover{
+    text-decoration: none; 
+}
+.card{
+    background: #121212;
+    border: none;
+}

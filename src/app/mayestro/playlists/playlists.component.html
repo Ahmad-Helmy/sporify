@@ -1,0 +1,35 @@
+<div *ngIf="length==0"class="container">
+  <div class="addmusicicon">
+    <svg role="img" viewBox="0 0 64 64"><path d="M16 7.494v28.362A8.986 8.986 0 0 0 9 32.5c-4.962 0-9 4.038-9 9s4.038 9 9 9 9-4.038 9-9V9.113l30-6.378v27.031a8.983 8.983 0 0 0-7-3.356c-4.962 0-9 4.038-9 9 0 4.963 4.038 9 9 9s9-4.037 9-9V.266L16 7.494zM9 48.5c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7c0 3.859-3.141 7-7 7zm32-6.09c-3.86 0-7-3.14-7-7 0-3.859 3.14-7 7-7s7 3.141 7 7c0 3.861-3.141 7-7 7z" fill="currentColor" fill-rule="evenodd"></path></svg>
+  </div>
+  <h1 class="firstplaylist">Create Your first playlist</h1>
+  <span class="text">It's easy, we'll help you.  </span>
+  <!-- Button to Open the Modal -->
+  <div class="modall">
+    <button (click)="openDialog()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Create Playlist
+    </button>
+
+  </div>
+</div>
+
+
+<!-- <p>card works!</p> -->
+<div *ngIf="length>0">
+  <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-4">
+    <div class="p-2">
+      <a class="card card-deck" [routerLink]="['/mayestro/playlist',song.id,song.type]">
+        <img class="card-img-top" src={{song.image}} alt="Card image">
+        <div class="card-body p-0 pt-2">
+          <h4 class="card-title txt mb-1"> {{song.name}} </h4>
+          <button class="stretch-link bton "><i class="fa fa-play ic"></i></button>
+          <p class="card-text"> {{song.owner[0].name}} </p>
+        </div>
+      </a>    
+    </div>
+  </div>
+</div>
+
+
+
+

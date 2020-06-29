@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* html,
+body {
+  height: 100%;
+  background-color: rgb(18, 18, 18);
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+
+}*/
+.bck {
+  background-color: rgb(18, 18, 18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  width: inherit;
+  min-height: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(18, 18, 18);
+}

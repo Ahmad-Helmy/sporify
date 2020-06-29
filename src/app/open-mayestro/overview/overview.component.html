@@ -1,0 +1,60 @@
+<div class="fullpage">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-19">
+            <div class="row">
+                <div class="col-7">
+                   <div class="header">
+                        <div class="head-title">
+                            <h1 style="font-size: 72px; padding-bottom: 20px; color: white;">Music without</h1>
+                            <h1 style="font-size: 72px; padding-bottom: 20px; color:white;"> limits</h1>
+                            <p style="font-size:16px; color:white;"> Premium lets you play any song, anytime. You can even listen when you’re offline. No restrictions. No ads.</p>
+                            <button class="upgrade" routerLink="/open.mayestro/premium">GET PREMIUM</button>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-3"> 
+                    image
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="row" style="position: relative; bottom:12px;">
+        <div class="col-1"></div>
+        <div class="col-3">
+           <app-sidebar></app-sidebar> 
+        </div>
+        <div class="col-7">
+            <div class="page">
+                <h1 style="font-size: 40px; padding-bottom: 26px;">Account overview</h1>
+                <div class="profile">
+                    <h3 style="font-size:24px; margin:24px 0px 16px;">Profile</h3>
+                    <table>
+                        <tr><td class="info-title">Username</td><td class="info">{{username}}</td></tr>
+                        <tr><td class="info-title">Email</td><td class="info">{{email}}</td></tr>
+                        <tr><td class="info-title">Date of birth</td><td class="info">{{day}}/{{month}}/{{year}}</td></tr>
+                        <tr><td class="info-title">Country</td><td class="info">{{country}}</td></tr>
+                        <tr><td style="padding-top: 10px;"><a href="/open.mayestro/profile"> <button class="view-button" >EDIT PROFILE</button></a></td></tr>
+                    </table>
+                </div>
+                <div class="plan">
+                    <h3 style="font-size: 24px;">Your plan </h3>
+                    <div class="free-card">
+                         <h1 style="font-size: 32px; font-family:Arial, Helvetica, sans-serif;">Spotify Free</h1>
+                    </div>
+                    <div class="free">
+                        <p style="border-bottom: 1px solid gray; padding:30px 20px 30px; font-size:16px ;">Play music in shuffle mode only, with ads.</p>
+                        <h1 style="font-size: 24px; padding:30px 20px 30px;">Free</h1>
+                    </div>
+                    <p style="padding-top: 10px;"><a href="/open.mayestro/premium"><button class="view-button">JOIN PREMIUM</button></a></p>
+                </div>
+                <div class="sign-out">
+                    <h3 style="font-size: 24px;">Sign out everywhere</h3>
+                    <p style="margin:16px 0px 24px; font-size:16px;">Sign out wherever you have Spotify open, including the web, mobile, desktop or any other devices.</p>
+                    <p class="free" style="padding: 16px; background-color: #f8f8f8;">Note: This doesn’t include partner devices, such as Sonos and PlayStation. For more information about logging out (or unlinking) Spotify from a partner device, check the device’s manufacturer guide.</p>
+                    <p style="padding-top: 10px;"><button class="view-button">SIGN OUT EVERYWHERE</button></p>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>

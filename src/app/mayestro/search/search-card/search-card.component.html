@@ -1,0 +1,9 @@
+<div class="pad">
+  <a class="card podcast" [ngStyle]="{ 'background-color': cards.bgColor}"
+    [routerLink]="['/mayestro/search/seeall',browse,cards.bgColor,cards.name]">
+    <div class="teet2">
+      <h4 class="text-center title">{{cards.name}} </h4>
+      <img class="card-img-top" [src]="cards.img" class="img">
+    </div>
+  </a>
+</div>

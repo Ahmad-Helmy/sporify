@@ -1,0 +1,57 @@
+<div class="cont py-4 rounded-lg">
+    <form #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="row img">
+            <div class="col-2"></div>
+            <div class="col-8 img">
+                <label for=""> Add Song Image</label>
+                <img *ngIf="imgUrl;else no_img" [src]="imgUrl" alt="">
+                <ng-template #no_img>
+                    <div class="no-img"></div>
+                </ng-template>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <input (change)="uploadImg($event.target.files)" type="file">
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="form-group col-8">
+                <label>Song Name</label>
+                <input type="text" class="form-control" ngModel name="name" #name="ngModel" id="">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="form-group col-8">
+                <label>Song Description</label>
+                <textarea type="text" rows="10" class="form-control" ngModel name="description" #discription="ngModel"
+                    id=""></textarea>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <label> Upload Song:</label>
+            </div>
+            <div class="col-5">
+                <input (change)="uploadImg($event.target.files)" type="file">
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <button type="submit" class="btn btn-success w-100">create</button>
+            </div>
+            <div class="col-2"></div>
+        </div>
+    </form>
+</div>

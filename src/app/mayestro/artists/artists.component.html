@@ -1,0 +1,29 @@
+<div *ngIf="this.length==0" class="container">
+    <div class="addartisticon">
+        <svg viewBox="0 0 52 54" xmlns="http://www.w3.org/2000/svg">
+            <title>Add Artist Icon</title>
+            <path
+                d="M35.71 34.12l-4.282-2.462c-.43-.247-.724-.668-.808-1.156-.085-.488.05-.984.373-1.36l3.486-4.088c2.212-2.585 3.43-5.886 3.43-9.293v-1.33c0-3.938-1.647-7.74-4.52-10.435C30.474 1.263 26.657-.102 22.66.16 15.176.646 9.31 7.114 9.31 14.887v.875c0 3.41 1.22 6.71 3.432 9.293l3.487 4.09c.32.375.456.87.372 1.36-.085.486-.38.908-.81 1.155l-8.547 4.914C2.775 39.112 0 43.878 0 49.012V53h2v-3.987c0-4.417 2.388-8.518 6.237-10.705l8.552-4.916c.946-.544 1.596-1.473 1.782-2.55.187-1.075-.113-2.168-.822-2.998l-3.488-4.09c-1.903-2.224-2.95-5.062-2.95-7.994v-.875c0-6.72 5.04-12.312 11.478-12.73 3.448-.218 6.725.95 9.23 3.3 2.51 2.35 3.89 5.538 3.89 8.975v1.33c0 2.932-1.047 5.77-2.95 7.995l-3.488 4.09c-.708.83-1.008 1.923-.822 3 .187 1.074.836 2.003 1.782 2.547l3.036 1.745c.706-.412 1.455-.755 2.243-1.018zM43 43v-9h-2v9h-9v2h9v9h2v-9h9v-2h-9z"
+                fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+    </div>
+    <h1 class="artist">Follow your first artist</h1>
+    <p class="artisttext">Follow artists you like by tapping the follow button.</p>
+    <button class="btn btn-light  btn-lg" routerLink='/mayestro/search'>FIND ARTISTS</button>
+</div>
+<!-- <p>card works!</p> -->
+<div *ngIf="this.length>0">
+    <div *ngFor="let artist of FollowedArtists" class="col-lg-2 col-md-3 col-sm-4">
+      <div class="p-2">
+        <a class="card card-deck" [routerLink]="['/mayestro/artist',artist.id,'overview']">
+          <img [ngClass]="'rounded-circle'" class="card-img-top" src={{artist.imgUrl}} alt="Card image">
+          <div class="card-body p-0 pt-2">
+            <h4 class="card-title txt mb-1"> {{artist.name}} </h4>
+            <button class="stretch-link bton "><i class="fa fa-play ic"></i></button>
+          </div>
+        </a>    
+      </div>
+    </div>
+  </div>
+  
+  

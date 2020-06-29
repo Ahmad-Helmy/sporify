@@ -1,0 +1,48 @@
+<div *ngIf="input;then searchArea;else browseArea"></div>
+<ng-template #browseArea>
+    <div class="px-5">
+        <div class="mbb-5">
+            <recent-search></recent-search>
+            <div class="row">
+                <div class="p-2 text">
+                    Browse All
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-2" *ngFor="let b of browse">
+                    <search-card [browseCards]="b"></search-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template #searchArea>
+    <div class="px-5">
+        <div class="no-result" *ngIf="!(top ||albums.cards ||playlists.cards ||artists.cards)">
+            No results found for ({{input}})
+        </div>
+        <section class="h" *ngIf="top">
+            <div class="col-4 in">
+                <top-result [topResult]="top"></top-result>
+            </div>
+            <div class="col-8 in">
+                <songs></songs>
+            </div>
+        </section>
+        <div class="row" *ngIf="albums.cards">
+            <div class="col-12">
+                <mini-card-viewer [search]='true' [category]="albums"></mini-card-viewer>
+            </div>
+        </div>
+        <div class="row" *ngIf="playlists.cards">
+            <div class="col-12">
+                <mini-card-viewer [search]='true' [category]="playlists"></mini-card-viewer>
+            </div>
+        </div>
+        <div class="row" *ngIf="artists.cards">
+            <div class="col-12">
+                <mini-card-viewer [search]='true' [category]="artists"></mini-card-viewer>
+            </div>
+        </div>
+    </div>
+</ng-template>

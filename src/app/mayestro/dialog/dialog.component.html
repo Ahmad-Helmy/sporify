@@ -1,0 +1,29 @@
+<form [formGroup]="form" #f="ngForm" (ngSubmit)="submit(f)" >
+    <div  style="width: 400px;">
+        <mat-dialog-actions >
+            <button class="cancel-button"  mat-button mat-dialog-close>X</button><br>
+           <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+        </mat-dialog-actions>
+        <mat-dialog-content style="padding-top: 30px; padding-bottom: 30px; padding-left: 40px;">
+            <mat-form-field>
+                <input  matInput
+                        placeholder="NEW PLAYLIST"
+                        formControlName="newPlaylist" > <br>
+                        
+            </mat-form-field>
+        </mat-dialog-content>
+        
+    </div>
+    <button  class="mat-button" mat-button mat-dialog-close >Cancel</button>
+    <button  class="mat-button" mat-button (click)="create()">Create</button>
+</form>
+<!--
+<form [formGroup]="form" class="pro-form" #f="ngForm" (ngSubmit)="submit(f)" >
+    <div class="form-group items">
+        <input formControlName="email" [(value)]="email"
+        class="form-control phone"
+          id="email"   type="text"  
+         >
+    </div>
+</form>
+-->

@@ -1,0 +1,1675 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>mayestro documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">mayestro documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ArtistOverviewComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/mayestro/artist/artist-overview/artist-overview.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-artist-overview</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./artist-overview.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./artist-overview.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#albums">albums</a>
+                            </li>
+                            <li>
+                                <a href="#appearsOn">appearsOn</a>
+                            </li>
+                            <li>
+                                <a href="#apShowLess">apShowLess</a>
+                            </li>
+                            <li>
+                                <a href="#apShowMoreBtn">apShowMoreBtn</a>
+                            </li>
+                            <li>
+                                <a href="#aShowLess">aShowLess</a>
+                            </li>
+                            <li>
+                                <a href="#aShowMoreBtn">aShowMoreBtn</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#moreAlbums">moreAlbums</a>
+                            </li>
+                            <li>
+                                <a href="#moreAppearsOn">moreAppearsOn</a>
+                            </li>
+                            <li>
+                                <a href="#moreSingles">moreSingles</a>
+                            </li>
+                            <li>
+                                <a href="#orgAlbums">orgAlbums</a>
+                            </li>
+                            <li>
+                                <a href="#orgAppearsOn">orgAppearsOn</a>
+                            </li>
+                            <li>
+                                <a href="#orgSingles">orgSingles</a>
+                            </li>
+                            <li>
+                                <a href="#singles">singles</a>
+                            </li>
+                            <li>
+                                <a href="#songs">songs</a>
+                            </li>
+                            <li>
+                                <a href="#sShowLess">sShowLess</a>
+                            </li>
+                            <li>
+                                <a href="#sShowMoreBtn">sShowMoreBtn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#albmsMoreFunc">albmsMoreFunc</a>
+                            </li>
+                            <li>
+                                <a href="#albmusShowLessFunc">albmusShowLessFunc</a>
+                            </li>
+                            <li>
+                                <a href="#appearsMoreFunc">appearsMoreFunc</a>
+                            </li>
+                            <li>
+                                <a href="#appearsShowLessFunc">appearsShowLessFunc</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#singlesMoreFunc">singlesMoreFunc</a>
+                            </li>
+                            <li>
+                                <a href="#SinglesShowLessFunc">SinglesShowLessFunc</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>, artist: <a href="../injectables/ArtistService.html">ArtistService</a>, playerservice: <a href="../injectables/PlayerService.html">PlayerService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>artist</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ArtistService.html" target="_self" >ArtistService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playerservice</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PlayerService.html" target="_self" >PlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="albmsMoreFunc"></a>
+                    <span class="name">
+                        <b>
+                            albmsMoreFunc
+                        </b>
+                        <a href="#albmsMoreFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>albmsMoreFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>send request to server to get more albms</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="albmusShowLessFunc"></a>
+                    <span class="name">
+                        <b>
+                            albmusShowLessFunc
+                        </b>
+                        <a href="#albmusShowLessFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>albmusShowLessFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="256"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:256</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>show less albums </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appearsMoreFunc"></a>
+                    <span class="name">
+                        <b>
+                            appearsMoreFunc
+                        </b>
+                        <a href="#appearsMoreFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>appearsMoreFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>send request to server to get more appears on</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appearsShowLessFunc"></a>
+                    <span class="name">
+                        <b>
+                            appearsShowLessFunc
+                        </b>
+                        <a href="#appearsShowLessFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>appearsShowLessFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="272"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:272</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>show less appears on </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>get data(artist singles,songs,albums) from the server and push it to the arrays(singles,albums,songs)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="singlesMoreFunc"></a>
+                    <span class="name">
+                        <b>
+                            singlesMoreFunc
+                        </b>
+                        <a href="#singlesMoreFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>singlesMoreFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="205"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:205</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>send request to server to get more singles</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SinglesShowLessFunc"></a>
+                    <span class="name">
+                        <b>
+                            SinglesShowLessFunc
+                        </b>
+                        <a href="#SinglesShowLessFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>SinglesShowLessFunc()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>show less singles </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="albums"></a>
+                        <span class="name">
+                            <b>
+                            albums</b>
+                            <a href="#albums"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of albums of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appearsOn"></a>
+                        <span class="name">
+                            <b>
+                            appearsOn</b>
+                            <a href="#appearsOn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of Appears on of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="apShowLess"></a>
+                        <span class="name">
+                            <b>
+                            apShowLess</b>
+                            <a href="#apShowLess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>appears on show less button</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="apShowMoreBtn"></a>
+                        <span class="name">
+                            <b>
+                            apShowMoreBtn</b>
+                            <a href="#apShowMoreBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>appears on show more button</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="aShowLess"></a>
+                        <span class="name">
+                            <b>
+                            aShowLess</b>
+                            <a href="#aShowLess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>albums show less button  </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="aShowMoreBtn"></a>
+                        <span class="name">
+                            <b>
+                            aShowMoreBtn</b>
+                            <a href="#aShowMoreBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>boolean if there is  albums more button</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id</b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>artist id</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="moreAlbums"></a>
+                        <span class="name">
+                            <b>
+                            moreAlbums</b>
+                            <a href="#moreAlbums"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of more albums of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="moreAppearsOn"></a>
+                        <span class="name">
+                            <b>
+                            moreAppearsOn</b>
+                            <a href="#moreAppearsOn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of more Appears on of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="moreSingles"></a>
+                        <span class="name">
+                            <b>
+                            moreSingles</b>
+                            <a href="#moreSingles"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of more singles of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orgAlbums"></a>
+                        <span class="name">
+                            <b>
+                            orgAlbums</b>
+                            <a href="#orgAlbums"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:68</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>original albums array</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orgAppearsOn"></a>
+                        <span class="name">
+                            <b>
+                            orgAppearsOn</b>
+                            <a href="#orgAppearsOn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>original Appears on array</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="orgSingles"></a>
+                        <span class="name">
+                            <b>
+                            orgSingles</b>
+                            <a href="#orgSingles"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:72</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>original singles array</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="singles"></a>
+                        <span class="name">
+                            <b>
+                            singles</b>
+                            <a href="#singles"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IACard.html" target="_self" >Array&lt;IACard&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of singles of type IACard</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="songs"></a>
+                        <span class="name">
+                            <b>
+                            songs</b>
+                            <a href="#songs"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IASong.html" target="_self" >Array&lt;IASong&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>array of sonsgs of type ISong</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sShowLess"></a>
+                        <span class="name">
+                            <b>
+                            sShowLess</b>
+                            <a href="#sShowLess"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>singles show less button</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sShowMoreBtn"></a>
+                        <span class="name">
+                            <b>
+                            sShowMoreBtn</b>
+                            <a href="#sShowMoreBtn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/mayestro/artist/artist-overview/artist-overview.component.ts:84</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>singles show more button</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ArtistService } from &#x27;./../artist.service&#x27;;
+import { IASong } from &#x27;./../artist-song/artist-song.interface&#x27;;
+import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ActivatedRoute } from &#x27;@angular/router&#x27;;
+import { IACard } from &#x27;../artist-card/artist-card.interface&#x27;;
+import { switchMap } from &#x27;rxjs/operators&#x27;;
+import { combineLatest } from &#x27;rxjs&#x27;;
+import { element } from &#x27;protractor&#x27;;
+import { PlayerService } from &#x27;../../player.service&#x27;;
+
+@Component({
+  selector: &#x27;app-artist-overview&#x27;,
+  templateUrl: &#x27;./artist-overview.component.html&#x27;,
+  styleUrls: [&#x27;./artist-overview.component.css&#x27;]
+})
+
+/**
+ * Artist overview component
+ */
+export class ArtistOverviewComponent implements OnInit {
+  /**
+   * array of sonsgs of type ISong
+   */
+  songs:Array&lt;IASong&gt;&#x3D;[];
+  /**
+   * array of albums of type IACard
+   */
+  albums:Array&lt;IACard&gt;&#x3D;[];
+   /**
+   * array of more albums of type IACard
+   */
+  moreAlbums:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * array of singles of type IACard
+  */
+  singles:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * array of more singles of type IACard
+  */
+  moreSingles:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * array of Appears on of type IACard
+  */
+  appearsOn:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * array of more Appears on of type IACard
+  */
+  moreAppearsOn:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * artist id
+   */
+  id:any;
+  /**
+   * albums show less button  
+   */
+  aShowLess&#x3D;false;
+  /**
+   * singles show less button
+   */
+  sShowLess&#x3D;false;
+  /**
+   * appears on show less button
+   */
+  apShowLess&#x3D;false;
+  /**
+   * original albums array
+   */
+  orgAlbums:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * original singles array
+   */
+  orgSingles:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   * original Appears on array
+   */
+  orgAppearsOn:Array&lt;IACard&gt;&#x3D;[];
+  /**
+   *boolean if there is  albums more button
+   */
+  aShowMoreBtn&#x3D;true;
+  /**
+   *  singles show more button
+   */
+  sShowMoreBtn&#x3D;true;
+  /**
+   *appears on show more button
+   */
+  apShowMoreBtn&#x3D;true;
+  
+  constructor(private route:ActivatedRoute,private artist:ArtistService,private playerservice:PlayerService) { }
+ 
+  /**
+   * get data(artist singles,songs,albums) from the server and push it to the arrays(singles,albums,songs)
+   */
+  ngOnInit() {
+    
+    this.route.params.pipe(
+      switchMap(param&#x3D;&gt;{
+        this.id&#x3D;param[&#x27;id&#x27;]
+        return combineLatest([
+          this.artist.getArtistTopTracks(this.id),
+          this.artist.getArtistAlbums(this.id),
+          // this.artist.getMoreAlbums(this.id),
+          this.artist.getArtistSingles(this.id),
+          this.artist.getAppearsOn(this.id)
+        ]); 
+      })
+      )
+      .subscribe((comp:any)&#x3D;&gt;{
+        
+      
+        comp[0].tracks.forEach((element:any) &#x3D;&gt; {
+          const song:IASong&#x3D;{
+            name: element.name,
+            duration:element.duration,
+            image:element.image,
+            isLiked:element.isLiked,
+            id:element.id,
+            url:element.url,
+            artist:element.artist
+            
+          }
+          this.songs.push(song);
+          this.playerservice.songs&#x3D;comp[0].tracks;
+        });
+        this.playerservice.name&#x3D;this.playerservice.songs[0].name;
+        this.playerservice.imageURL&#x3D;this.playerservice.songs[0].image;
+        this.playerservice.artist&#x3D;this.playerservice.songs[0].artists[0].name;
+        this.playerservice.x.src&#x3D;this.playerservice.songs[0].url;
+        this.playerservice.array&#x3D;this.playerservice.songs.length;
+        this.playerservice.checkindex&#x3D;this.playerservice.playerindex;
+        ////////////////
+        console.log(comp[1])
+        comp[1].albums.forEach((element:any) &#x3D;&gt; {
+          const album:IACard&#x3D;{
+            name: element.name,
+            duration:0,
+            image:element.image,
+            isLiked:false,
+            id:element.id,
+            totalTracks:element.totalTracks,
+            type:&quot;album&quot;
+          }
+          this.albums.push(album);
+          
+        });
+        this.orgAlbums&#x3D;this.albums
+
+        comp[2].tracks.forEach((element:any) &#x3D;&gt; {
+          const single:IACard&#x3D;{
+            name: element.name,
+            duration:element.duration,
+            image:element.image,
+            isLiked:element.isLiked,
+            id:element.id,
+            totalTracks:0,
+            type:&quot;album&quot;
+          }
+          this.singles.push(single);
+        });
+        this.orgSingles&#x3D;this.singles
+        comp[3].albums.forEach((element:any) &#x3D;&gt; {
+          const appearOn:IACard&#x3D;{
+            name: element.name,
+            duration:element.duration,
+            image:element.image,
+            isLiked:element.isLiked,
+            id:element.id,
+            totalTracks:0,
+            type:&quot;album&quot;
+          }
+          this.appearsOn.push(appearOn);
+        });
+        this.orgAppearsOn&#x3D;this.appearsOn
+      });
+  }
+  /**
+   * send request to server to get more albms
+   */
+  albmsMoreFunc(){
+  
+    this.aShowMoreBtn&#x3D;true;
+    this.aShowLess&#x3D;false;
+    this.albums&#x3D;this.orgAlbums
+      
+    this.artist.getMoreAlbums(this.id).subscribe((res:any)&#x3D;&gt;{      
+        res.albums.forEach((element:any) &#x3D;&gt; {
+          const album:IACard&#x3D;{
+            name: element.name,
+            duration:0,
+            image:element.image,
+            isLiked:false,
+            id:element.id,
+            totalTracks:element.totalTracks,
+            type:&quot;album&quot;
+          }
+          this.moreAlbums.push(album);
+        });
+        this.albums&#x3D;this.albums.concat(this.moreAlbums)
+      });
+  }
+  /**
+   * send request to server to get more singles
+   */
+  singlesMoreFunc(){
+  
+    this.sShowMoreBtn&#x3D;true;
+    this.sShowLess&#x3D;false;
+    this.singles&#x3D;this.orgSingles;
+      
+    this.artist.getMoreSingles(this.id).subscribe((res:any)&#x3D;&gt;{
+      console.log(res)     
+        res.tracks.forEach((element:any) &#x3D;&gt; {
+          const album:IACard&#x3D;{
+            name: element.name,
+            duration:0,
+            image:element.image,
+            isLiked:false,
+            id:element.id,
+            totalTracks:element.totalTracks,
+            type:&quot;album&quot;
+          }
+          this.moreSingles.push(album);
+        });
+        this.singles&#x3D;this.singles.concat(this.moreSingles)
+      });
+  }
+  /**
+   * send request to server to get more appears on
+   */
+  appearsMoreFunc(){
+  
+    this.apShowMoreBtn&#x3D;true;
+    this.apShowLess&#x3D;false;
+    this.appearsOn&#x3D;this.orgAppearsOn
+      
+    this.artist.getMoreAppearsOn(this.id).subscribe((res:any)&#x3D;&gt;{      
+        res.albums.forEach((element:any) &#x3D;&gt; {
+          const album:IACard&#x3D;{
+            name: element.name,
+            duration:0,
+            image:element.image,
+            isLiked:false,
+            id:element.id,
+            totalTracks:element.totalTracks,
+            type:&quot;album&quot;
+          }
+          this.moreAppearsOn.push(album);
+        });
+        this.appearsOn&#x3D;this.appearsOn.concat(this.moreAppearsOn)
+      });
+  }
+  /**
+   * show less albums 
+   */
+  albmusShowLessFunc(){
+    this.moreAlbums&#x3D;[];
+    this.aShowLess&#x3D;true;
+    this.aShowMoreBtn&#x3D;false;
+  }
+   /**
+   * show less singles 
+   */
+  SinglesShowLessFunc(){
+    this.moreSingles&#x3D;[];
+    this.sShowLess&#x3D;true;
+    this.sShowMoreBtn&#x3D;false;  
+  }
+   /**
+   * show less appears on 
+   */
+  appearsShowLessFunc(){
+    this.moreAppearsOn&#x3D;[];
+    this.apShowLess&#x3D;true;
+    this.apShowMoreBtn&#x3D;false;  
+  }
+  
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- &lt;p&gt;artist-overview works!&lt;/p&gt; --&gt;
+&lt;div class&#x3D;&quot;artist-songs&quot;&gt;
+    &lt;div class&#x3D;&quot;artist-popular&quot;&gt;
+        &lt;h1 style&#x3D;&quot; font-size: 28px; font-weight: 700; color: #fff;&quot;&gt;Popular&lt;/h1&gt;
+        &lt;div class&#x3D;&quot;paylist-pox&quot; style&#x3D;&quot;padding-left: 15px;&quot;  *ngFor&#x3D;&quot;let s of songs&quot;&gt;
+            &lt;!-- song div --&gt;
+            &lt;app-artist-song [song]&#x3D;&quot;s&quot;&gt;&lt;/app-artist-song&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;artist-albums&quot; &gt;
+        &lt;h1 style&#x3D;&quot; font-size: 28px; font-weight: 700; color: #fff; padding-bottom: 16px;&quot;&gt;Albums&lt;/h1&gt;
+    
+        &lt;div class&#x3D;&quot;row px-1&quot;  &gt;
+            &lt;div *ngIf&#x3D;&quot;aShowMoreBtn&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let a of albums&quot;&gt;&lt;app-artist-card [aCard]&#x3D;&quot;a&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+            &lt;div *ngIf&#x3D;&quot;aShowLess&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let a of albums |slice:0:12 &quot; &gt;&lt;app-artist-card [aCard]&#x3D;&quot;a&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text-center&quot; style&#x3D;&quot;margin-top: 40px;&quot; [class.show]&#x3D;&quot;show&quot;  *ngIf&#x3D;&quot;albums.length &gt;&#x3D; 12&quot;&gt;&lt;button class&#x3D;&quot; showmore-btn&quot; (click)&#x3D;&quot;aShowMore &#x3D; !aShowMore&quot;  (click)&#x3D;&quot;aShowMore ? albmsMoreFunc() : albmusShowLessFunc()&quot;&gt;{{ aShowMore ? &#x27;SHOW LESS&#x27;: &#x27;SHOW MORE&#x27; }}  &lt;div class&#x3D;&quot;fa &quot; style&#x3D;&quot;padding-left:5px; font-size: 20px; &quot;&gt;{{ aShowMore ? &#x27;&amp;#xf106;&#x27;: &#x27;&amp;#xf107;&#x27; }}&lt;/div&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;artist-albums&quot; &gt;
+        &lt;h1 style&#x3D;&quot; font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;&quot;&gt;Singles and EPs&lt;/h1&gt;
+         &lt;div class&#x3D;&quot;row px-1&quot;&gt;
+            &lt;div *ngIf&#x3D;&quot;sShowMoreBtn&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let s of singles&quot;&gt;&lt;app-artist-card [aCard]&#x3D;&quot;s&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+            &lt;div *ngIf&#x3D;&quot;sShowLess&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let s of singles |slice:0:12 &quot; &gt;&lt;app-artist-card [aCard]&#x3D;&quot;s&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text-center&quot; style&#x3D;&quot;margin-top: 40px;&quot; [class.show]&#x3D;&quot;show&quot;  *ngIf&#x3D;&quot;singles.length &gt;&#x3D; 12&quot;&gt;&lt;button class&#x3D;&quot; showmore-btn&quot; (click)&#x3D;&quot;sShowMore &#x3D; !sShowMore&quot;  (click)&#x3D;&quot;sShowMore ? singlesMoreFunc() : SinglesShowLessFunc()&quot;&gt;{{ sShowMore ? &#x27;SHOW LESS&#x27;: &#x27;SHOW MORE&#x27; }}  &lt;div class&#x3D;&quot;fa &quot; style&#x3D;&quot;padding-left:5px; font-size: 20px; &quot;&gt;{{ sShowMore ? &#x27;&amp;#xf106;&#x27;: &#x27;&amp;#xf107;&#x27; }}&lt;/div&gt;&lt;/button&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;artist-albums&quot; &gt;
+        &lt;h1 style&#x3D;&quot; font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;&quot;&gt;Appears On&lt;/h1&gt;
+         &lt;div class&#x3D;&quot;row px-1&quot;&gt;
+            &lt;div *ngIf&#x3D;&quot;apShowMoreBtn&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let ap of appearsOn&quot;&gt;&lt;app-artist-card [aCard]&#x3D;&quot;ap&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+            &lt;div *ngIf&#x3D;&quot;apShowLess&#x3D;&#x3D;true&quot;&gt;&lt;div class&#x3D;&quot;col-lg-2 col-md-3 col-sm-4&quot; *ngFor&#x3D;&quot;let ap of appearsOn |slice:0:12 &quot; &gt;&lt;app-artist-card [aCard]&#x3D;&quot;ap&quot; &gt;&lt;/app-artist-card&gt;&lt;/div&gt;&lt;/div&gt;    
+            
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;text-center&quot; style&#x3D;&quot;margin-top: 40px;&quot; [class.show]&#x3D;&quot;show&quot;  *ngIf&#x3D;&quot;appearsOn.length &gt;&#x3D; 12&quot;&gt;&lt;button class&#x3D;&quot; showmore-btn&quot; (click)&#x3D;&quot;apShowMore &#x3D; !apShowMore&quot;  (click)&#x3D;&quot;apShowMore ? appearsMoreFunc() : appearsShowLessFunc()&quot;&gt;{{ apShowMore ? &#x27;SHOW LESS&#x27;: &#x27;SHOW MORE&#x27; }}  &lt;div class&#x3D;&quot;fa &quot; style&#x3D;&quot;padding-left:5px; font-size: 20px; &quot;&gt;{{ apShowMore ? &#x27;&amp;#xf106;&#x27;: &#x27;&amp;#xf107;&#x27; }}&lt;/div&gt;&lt;/button&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./artist-overview.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+body{
+    height: auto;
+    background-color: #121212;
+  }
+  
+  .artist-songs{
+      margin-left: 24px;
+      margin-right: 24px;
+  }
+  
+  .artist-popular{
+  
+      background-color: #121212;
+      padding-bottom: 16px;
+      
+  
+  }
+  
+  .artist-albums{
+      /* margin-top: 16px;
+      margin-bottom: 16px; */
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 24px;
+  }
+  
+  .showmore-btn {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-family: Cambria, Cochin, Georgia, Times, &#x27;Times New Roman&#x27;, serif;
+  }
+  
+  .showmore-btn:hover{
+      transform: scale(1.05,1.05);
+      border: none;
+  }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- <p>artist-overview works!</p> --><div class="artist-songs">    <div class="artist-popular">        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;">Popular</h1>        <div class="paylist-pox" style="padding-left: 15px;"  *ngFor="let s of songs">            <!-- song div -->            <app-artist-song [song]="s"></app-artist-song>        </div>    </div>    <div class="artist-albums" >        <h1 style=" font-size: 28px; font-weight: 700; color: #fff; padding-bottom: 16px;">Albums</h1>            <div class="row px-1"  >            <div *ngIf="aShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let a of albums"><app-artist-card [aCard]="a" ></app-artist-card></div></div>                <div *ngIf="aShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let a of albums |slice:0:12 " ><app-artist-card [aCard]="a" ></app-artist-card></div></div>            </div>        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="albums.length >= 12"><button class=" showmore-btn" (click)="aShowMore = !aShowMore"  (click)="aShowMore ? albmsMoreFunc() : albmusShowLessFunc()">{{ aShowMore ? \'SHOW LESS\': \'SHOW MORE\' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ aShowMore ? \'&#xf106;\': \'&#xf107;\' }}</div></button></div>    </div>    <div class="artist-albums" >        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;">Singles and EPs</h1>         <div class="row px-1">            <div *ngIf="sShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let s of singles"><app-artist-card [aCard]="s" ></app-artist-card></div></div>                <div *ngIf="sShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let s of singles |slice:0:12 " ><app-artist-card [aCard]="s" ></app-artist-card></div></div>            </div>        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="singles.length >= 12"><button class=" showmore-btn" (click)="sShowMore = !sShowMore"  (click)="sShowMore ? singlesMoreFunc() : SinglesShowLessFunc()">{{ sShowMore ? \'SHOW LESS\': \'SHOW MORE\' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ sShowMore ? \'&#xf106;\': \'&#xf107;\' }}</div></button></div>    </div>    <div class="artist-albums" >        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;">Appears On</h1>         <div class="row px-1">            <div *ngIf="apShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let ap of appearsOn"><app-artist-card [aCard]="ap" ></app-artist-card></div></div>                <div *ngIf="apShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let ap of appearsOn |slice:0:12 " ><app-artist-card [aCard]="ap" ></app-artist-card></div></div>                        </div>        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="appearsOn.length >= 12"><button class=" showmore-btn" (click)="apShowMore = !apShowMore"  (click)="apShowMore ? appearsMoreFunc() : appearsShowLessFunc()">{{ apShowMore ? \'SHOW LESS\': \'SHOW MORE\' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ apShowMore ? \'&#xf106;\': \'&#xf107;\' }}</div></button></div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutArtistComponent', 'selector': 'app-about-artist'},{'name': 'AccountHelpComponent', 'selector': 'app-account-help'},{'name': 'AccountMayestroComponent', 'selector': 'app-account-mayestro'},{'name': 'AlbumsComponent', 'selector': 'app-albums'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ArtistCardComponent', 'selector': 'app-artist-card'},{'name': 'ArtistComponent', 'selector': 'app-artist'},{'name': 'ArtistHeaderComponent', 'selector': 'app-artist-header'},{'name': 'ArtistManagementComponent', 'selector': 'app-artist-management'},{'name': 'ArtistOverviewComponent', 'selector': 'app-artist-overview'},{'name': 'ArtistsComponent', 'selector': 'app-artists'},{'name': 'ArtistSongComponent', 'selector': 'app-artist-song'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardsContainerComponent', 'selector': 'app-cards-container'},{'name': 'ChangeEmailHelpComponent', 'selector': 'app-change-email-help'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePlanComponent', 'selector': 'app-change-plan'},{'name': 'ChartComponent', 'selector': 'app-chart'},{'name': 'ConnectComponent', 'selector': 'app-connect'},{'name': 'ConnectingComponent', 'selector': 'app-connecting'},{'name': 'CreateAlbumComponent', 'selector': 'app-create-album'},{'name': 'CreateSongComponent', 'selector': 'app-create-song'},{'name': 'DialogComponent', 'selector': 'app-dialog'},{'name': 'DownloadComponent', 'selector': 'app-download'},{'name': 'EditAccountHelpComponent', 'selector': 'app-edit-account-help'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'ForgetPasswordComponent', 'selector': 'app-forget-password'},{'name': 'GetPremiumComponent', 'selector': 'app-get-premium'},{'name': 'GetPremiumHeaderComponent', 'selector': 'app-get-premium-header'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeArtistCardComponent', 'selector': 'app-home-artist-card'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LikedsongsComponent', 'selector': 'app-likedsongs'},{'name': 'LoadingComponent', 'selector': 'app-loading'},{'name': 'LoginHelpComponent', 'selector': 'app-login-help'},{'name': 'MayestroComponent', 'selector': 'app-mayestro'},{'name': 'MiniCardViewerComponent', 'selector': 'mini-card-viewer'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotificationComponent', 'selector': 'app-notification'},{'name': 'NotificationHelpComponent', 'selector': 'app-notification-help'},{'name': 'OpenMayestroComponent', 'selector': 'app-open-mayestro'},{'name': 'OverviewComponent', 'selector': 'app-overview'},{'name': 'PlayerComponent', 'selector': 'app-player'},{'name': 'PlayingQueueComponent', 'selector': 'app-playing-queue'},{'name': 'PlaylistComponent', 'selector': 'app-playlist'},{'name': 'PlaylistsComponent', 'selector': 'app-playlists'},{'name': 'PremiumComponent', 'selector': 'app-premium'},{'name': 'PrivacyPolicyComponent', 'selector': 'app-privacy-policy'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RecentSearchComponent', 'selector': 'recent-search'},{'name': 'RelatedArtistsComponent', 'selector': 'app-related-artists'},{'name': 'ResetPasswordComponent', 'selector': 'app-reset-password'},{'name': 'ResetPasswordHelpComponent', 'selector': 'app-reset-password-help'},{'name': 'SearchCardComponent', 'selector': 'search-card'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SeeAllComponent', 'selector': 'app-see-all'},{'name': 'SetDevicePasswordComponent', 'selector': 'app-set-device-password'},{'name': 'SideBarComponent', 'selector': 'app-side-bar'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SidebarHelpComponent', 'selector': 'app-sidebar-help'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SongComponent', 'selector': 'app-song'},{'name': 'SongComponent', 'selector': 'app-song'},{'name': 'SongsComponent', 'selector': 'songs'},{'name': 'TopResultComponent', 'selector': 'top-result'},{'name': 'TrackComponent', 'selector': 'app-track'},{'name': 'UserProfileComponent', 'selector': 'app-user-profile'},{'name': 'UsingMayestroComponent', 'selector': 'app-using-mayestro'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ArtistOverviewComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ArtistOverviewComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

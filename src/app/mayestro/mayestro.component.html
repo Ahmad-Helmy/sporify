@@ -1,0 +1,17 @@
+<div class="p-0 test" style="background-color: #121212;">
+    <div class="side">
+        <app-side-bar></app-side-bar>
+    </div>
+    <div class="position-fixed headd">
+        <app-header></app-header>
+    </div>
+    <div class="test">
+        <section class=" position-relative  p-0">
+            <div class="container p-0 router">
+                <router-outlet (activate)="onActivate($event)"></router-outlet>
+            </div>
+        </section>
+        <footer class="player ">
+            <app-player></app-player>
+        </footer>
+</div>

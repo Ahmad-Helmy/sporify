@@ -1,0 +1,29 @@
+h1{
+    font-size: 32px; 
+    font-weight: 500;
+    line-height: normal;
+    margin:80px 10px 50px 80px;
+    font-family: Arial, Helvetica, sans-serif;  
+    color: gray;
+}
+
+a{
+    font-size: 18px; 
+    color: blue;
+    font-weight: bold;
+    margin:80px 10px 20px 80px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+h2{
+    font-size: 20px; 
+    font-weight: bold;
+    line-height: normal;
+    margin:80px 10px 20px 80px;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+a:hover {
+    text-decoration: none;
+    color: darkblue;
+  }

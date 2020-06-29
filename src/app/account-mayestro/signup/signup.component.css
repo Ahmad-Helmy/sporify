@@ -1,0 +1,116 @@
+.signup {
+  font-family: circular-spotify-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  width: 450px;
+  position: relative;
+}
+.custom-btn {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  min-width: 160px;
+  padding: 16px 14px 18px;
+  border-radius: 500px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.or::after {
+  content: "";
+  width: 45%;
+  height: 1px;
+  background-color: #d9dadc;
+  position: absolute;
+  top: 42%;
+  right: 0;
+}
+.or::before {
+  content: "";
+  width: 45%;
+  height: 1px;
+  background-color: #d9dadc;
+  position: absolute;
+  top: 42%;
+  left: 0;
+}
+.or {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.facebook-btn {
+  background-color: #3b5998;
+}
+.facebook-btn {
+  background-color: #3b5998;
+}
+.signup-btn {
+  letter-spacing: 2px;
+}
+.signup-btn:hover {
+  background-color: #1ed760;
+}
+.facebook-btn:hover {
+  background-color: #3a61b3;
+}
+
+.fa {
+  background-color: white;
+  size: 30px;
+  color: #3b5998;
+}
+h5,
+h4 {
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 1.1;
+  color: inherit;
+}
+.BD {
+  color: #88898c;
+  display: block;
+  font-size: 0.9375em;
+  text-align: left;
+}
+.share {
+  color: #88898c;
+  display: block;
+  font-size: 0.75em;
+  text-align: left;
+}
+.notice {
+  text-align: center;
+  font-size: 0.75em;
+  color: #222326;
+  font-weight: 400;
+}
+a {
+  color: #1db954;
+  text-decoration: none;
+}
+a:hover {
+  color: #1ed760;
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame,
+::ng-deep
+  .mat-radio-button.mat-accent.mat-radio-checked
+  .mat-radio-outer-circle,
+::ng-deep .mat-radio-outer-circle {
+  border-color: #1db954;
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+::ng-deep .mat-radio-button.mat-accent .mat-radio-inner-circle,
+::ng-deep
+  .mat-radio-button.mat-accent.mat-radio-checked
+  .mat-radio-persistent-ripple,
+::ng-deep
+  .mat-radio-button.mat-accent.mat-radio-checked
+  .mat-ripple
+  .mat-ripple-element,
+.signup-btn {
+  background-color: #1db954;
+}
+.err {
+  color: #f44336;
+}

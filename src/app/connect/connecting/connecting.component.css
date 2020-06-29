@@ -1,0 +1,90 @@
+.section1{
+  background-color: rgb(25, 230, 140);
+  padding: 214px 104px;
+  width: 3500px;
+  display: block;
+  margin-top: 100px;
+}
+
+.text1{
+  font-size: 3.2vw;
+  font-weight: 1000;
+  font-family: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-bold.woff2");
+  color: rgb(24, 24, 24);
+  margin-left: 70px;
+}
+.sign{
+  margin-left: 750px;
+  z-index: 2;
+}
+.computer {
+    /* position: absolute; */
+    width: 5%;
+    top: 30%;
+    /* left: 50%; */
+    margin-left: 800px;
+    margin-top: 40px;
+}
+/* .img {
+    vertical-align: middle;
+
+} */
+.try{
+  margin-left: 220px;
+  font-size: 1.2vw;
+}
+.try2{
+  margin-left: 200px;
+}
+.ref{
+  color: black;
+}
+.section2{
+  background-color:white;
+  padding: 100px 400px;
+  width: 3500px;
+  display: block;
+  line-height: normal;
+}
+.AppStoreLink
+{
+ display: inline-block;
+ margin: 10px;
+ box-sizing: border-box;
+ text-align: center;
+ margin-bottom: 20px;
+ 
+}
+.section3{
+ background-color: rgb(34, 35, 38);
+ padding: 214px 104px;
+ width: 3500px;
+ display: block;
+ line-height: normal;
+ color: white;
+}
+.device{
+  position: relative;
+  margin-left: 14%;
+
+}
+
+.dot{
+  color: rgb(29, 185, 84);
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+
+ul, li {
+    display:inline
+}
+.items{
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+}
+a{
+  overflow: hidden;
+  color: rgb(29, 185, 84);
+}

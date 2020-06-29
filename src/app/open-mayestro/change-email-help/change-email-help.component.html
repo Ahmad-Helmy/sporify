@@ -1,0 +1,80 @@
+<div class="row" style="background-color: #ffffff; ">
+    <div class="col-3" ><app-sidebar-help></app-sidebar-help></div>
+
+    <div class="col-9 full-page">
+        <div class="col-10">
+            <h1>Change email address</h1>
+            <ol>
+                <li>Log in to <a routerLink="/open.mayestro/overview">your account page</a>.</li>
+                <li>Click <b>EDIT PROFILE</b>.</li>
+                <li>Under<b> Email</b>, enter your new email address.</li>
+                <li>Confirm your password.</li>
+                <li>Click <b>SAVE PROFILE</b>.</li>
+            </ol>
+            <p>And you're done! 
+                A confirmation email will be sent to both the old and 
+                new email address detailing the changes.</p>
+            <h2>Didn't work?</h2>
+            <button (click)="First()">It won’t let me enter a new address
+                <i *ngIf="EmailAddress==false" class="fa fa-chevron-down" ></i>     
+                <i *ngIf="EmailAddress==true" class="fa fa-chevron-up" ></i>     
+            </button>
+            <div *ngIf="EmailAddress==true">
+                <p>This means your Mayestro account was created through Facebook, 
+                    so you don't need to change your email to log in.
+                     Simply choose <b>LOG IN WITH FACEBOOK</b> or <b>CONTINUE WITH FACEBOOK</b> to access your account.</p>
+                <p>If you can't log in with Facebook, follow these steps:</p>
+                <ol style="margin:0px 0px 10px 106px;">
+                    <li>Go to our <a routerLink="/account.mayestro/change-password">password reset form</a>.</li>
+                    <li>Enter the email address registered to your Facebook account.</li>
+                    <li>Continue to create a password for the account.</li>
+                </ol>
+                <p>Check out <a routerLink="/open.mayestro/reset-password-help">reset password</a> if you need help. </p>
+                <p>You can now log in with your Facebook email address and new password.</p>
+            </div>
+            <button (click)="Second()">Another account is using my email address
+                <i *ngIf="Password==false" class="fa fa-chevron-down" ></i>     
+                <i *ngIf="Password==true" class="fa fa-chevron-up" ></i>     
+            </button>
+            <div *ngIf="Password==true">
+                <p>If it’s possible you’ve already used your email address on another account,
+                     try using our <a routerLink="/account.mayestro/change-password">password reset form</a> to get access to that account.</p>
+                <p>If you believe someone else is using your 
+                    email address, follow these steps to get in touch with us:</p>
+                <ol style="margin:0px 0px 10px 106px;">
+                    <li><a>Go to this contact form</a> and select <b>Subscription</b>, then <b>Other</b>, then <b>I STILL NEED HELP</b>.</li>
+                    <li>Select <b>Premium</b> as your subscription.</li>
+                    <li>Enter your email address.</li>
+                    <li>Enter your name.</li>
+                    <li>Describe your issue and submit/start chat.</li>
+                </ol>
+            </div>
+            <button (click)="Third()">I no longer have access to the email address on my account
+                <i *ngIf="Link==false" class="fa fa-chevron-down" ></i>     
+                <i *ngIf="Link==true" class="fa fa-chevron-up" ></i>     
+            </button>
+            <div *ngIf="Link==true">
+                <p>If you don’t have access to an email address on your account,
+                     you’re unable to update it unless you’re already logged in to your account page.</p>
+                <p>You do have some options though:</p>
+                <ul style="margin:0px 0px 10px 106px;">
+                    <li>The email provider could help you regain access to the email address.</li>
+                    <li>You could start fresh with <a routerLink="/open.mayestro/home">a new account</a>.
+                       <br> <b>Note:</b> You won’t be able to cancel any existing Premium subscriptions.
+                    </li>
+                    <li> Or, get in touch with us with these steps:</li>
+                </ul>
+                <ol style="margin:0px 0px 10px 116px;">
+                    <li><a>Go to this contact form</a> and select <b>Subscription</b>, then <b>Other</b>, 
+                        then <b>I STILL NEED HELP2</b>.</li>
+                    <li>Select <b>Premium</b> as your subscription.</li>
+                    <li>Enter your email address.</li>
+                    <li>Enter your name.</li>
+                    <li>Describe your issue and submit/start chat.</li>
+                </ol>
+            </div>
+            <div  class="p" style=" width:100%; height: 200px; border-top: 1px solid rgb(182, 179, 179);"></div>
+        
+        </div>
+    </div>
+</div>

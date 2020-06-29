@@ -1,0 +1,37 @@
+<!-- <p>artist-overview works!</p> -->
+<div class="artist-songs">
+    <div class="artist-popular">
+        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;">Popular</h1>
+        <div class="paylist-pox" style="padding-left: 15px;"  *ngFor="let s of songs">
+            <!-- song div -->
+            <app-artist-song [song]="s"></app-artist-song>
+        </div>
+    </div>
+    <div class="artist-albums" >
+        <h1 style=" font-size: 28px; font-weight: 700; color: #fff; padding-bottom: 16px;">Albums</h1>
+    
+        <div class="row px-1"  >
+            <div *ngIf="aShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let a of albums"><app-artist-card [aCard]="a" ></app-artist-card></div></div>    
+            <div *ngIf="aShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let a of albums |slice:0:12 " ><app-artist-card [aCard]="a" ></app-artist-card></div></div>    
+        </div>
+        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="albums.length >= 12"><button class=" showmore-btn" (click)="aShowMore = !aShowMore"  (click)="aShowMore ? albmsMoreFunc() : albmusShowLessFunc()">{{ aShowMore ? 'SHOW LESS': 'SHOW MORE' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ aShowMore ? '&#xf106;': '&#xf107;' }}</div></button></div>
+    </div>
+
+    <div class="artist-albums" >
+        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;">Singles and EPs</h1>
+         <div class="row px-1">
+            <div *ngIf="sShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let s of singles"><app-artist-card [aCard]="s" ></app-artist-card></div></div>    
+            <div *ngIf="sShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let s of singles |slice:0:12 " ><app-artist-card [aCard]="s" ></app-artist-card></div></div>    
+        </div>
+        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="singles.length >= 12"><button class=" showmore-btn" (click)="sShowMore = !sShowMore"  (click)="sShowMore ? singlesMoreFunc() : SinglesShowLessFunc()">{{ sShowMore ? 'SHOW LESS': 'SHOW MORE' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ sShowMore ? '&#xf106;': '&#xf107;' }}</div></button></div>    </div>
+
+    <div class="artist-albums" >
+        <h1 style=" font-size: 28px; font-weight: 700; color: #fff;padding-bottom: 16px;">Appears On</h1>
+         <div class="row px-1">
+            <div *ngIf="apShowMoreBtn==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let ap of appearsOn"><app-artist-card [aCard]="ap" ></app-artist-card></div></div>    
+            <div *ngIf="apShowLess==true"><div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let ap of appearsOn |slice:0:12 " ><app-artist-card [aCard]="ap" ></app-artist-card></div></div>    
+            
+        </div>
+        <div class="text-center" style="margin-top: 40px;" [class.show]="show"  *ngIf="appearsOn.length >= 12"><button class=" showmore-btn" (click)="apShowMore = !apShowMore"  (click)="apShowMore ? appearsMoreFunc() : appearsShowLessFunc()">{{ apShowMore ? 'SHOW LESS': 'SHOW MORE' }}  <div class="fa " style="padding-left:5px; font-size: 20px; ">{{ apShowMore ? '&#xf106;': '&#xf107;' }}</div></button></div>
+    </div>
+</div>

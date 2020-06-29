@@ -1,0 +1,26 @@
+img {
+    height: 150px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .card{
+      display:flex;
+      flex-direction: column;
+      background-color: #282828;
+      position: relative;
+      padding: 20px 20px 16px;
+      border-radius: 8px;
+      isolation: isolate;
+      box-sizing: border-box;
+  
+  }
+  .card-body {
+    height: 100px;
+  }
+  .btn {
+    display: none;
+  }
+  .card-body:hover .btn {
+    display: inline;
+  }
+  

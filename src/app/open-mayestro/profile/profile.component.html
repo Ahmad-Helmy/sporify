@@ -1,0 +1,78 @@
+<div class="fullpage">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-3">
+         <app-sidebar></app-sidebar>
+        </div>
+        <div class="col-7">
+            <div class="page">
+                <h1 class="header">Edit Profile </h1>
+                <form [formGroup]="form" class="pro-form" #f="ngForm" (ngSubmit)="submit(f)" >
+                    <div class="form-group items">
+                        <label class="text" for="email">Email</label><br>
+                        <input formControlName="email" [(value)]="email"
+                        class="form-control phone"
+                          id="email"   type="text"  
+                         >
+                    </div>
+                    <div class="form-group items">
+                        <label class="text">Confirm Password</label><br>
+                        <input disabled type="text" class="phone">
+                    </div>
+                   <div class=" items">
+                        <label class="text">Gender</label><br>
+                        <select (change)="chooseGender($event)" [(value)]="gender" style="height: 40px; width: 690px;">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group items">
+                        <label class="text">Date of birth</label><br>
+                        <div class="bootstrap-date row" style="padding-left: 10px; width:720px">
+                            <div class="col-xs-4" style="margin:0px 10px;">
+                                <select (change)="chooseDay($event)" [(value)]="day" style="height: 40px; width: 205px;">
+                                    <option *ngFor="let day of days" [value]="day.id">{{day.id}}</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4"  style="margin:0px 10px;">
+                                <select [(value)]="month" (change)="chooseMonth($event)" style="height: 40px; width: 205px;">
+                                    <option *ngFor="let month of months"  [value]="month.id">{{month.id}}</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4" style="margin:0px 10px;"> 
+                                <select [(value)]="year"  (change)="chooseYear($event)"style="height: 40px; width: 235px;">
+                                    <option *ngFor="let year of years"  [value]="year.id">{{year.id}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-group items">
+                        <label class="text">Counrty</label><br>
+                            <select  (change)="chooseCountry($event)" style="height: 40px; width: 690px;">
+                                <option value="Egypt">Egypt</option>
+                                <option value="USA">USA</option>
+                            </select>
+
+                    </div>
+                    <div class="form-group items">
+                        <label class="text">Mobile phone number</label><br>
+                        <input disabled type="text" class="phone">
+                    </div>
+                    <div class="form-group items">
+                        <label class="container">
+                            <input type="checkbox"> 
+                            <p class="text" style=" width: 600px; height: 40px;">Share my registration data with Spotify's content providers for marketing purposes.</p>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div style="height: 70px; padding-top: 20px; padding-left: 260px;">
+                        <a routerLink="/open.mayestro/overview"><button class="cancel-button">CANCEL</button></a>
+                        <button class="save-button">SAVE PROFILE</button>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </div>
+</div>

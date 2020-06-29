@@ -1,0 +1,33 @@
+<div *ngIf="this.length==0"class="container">
+    <div class="discovericon">
+        <svg viewBox="0 0 80 79" xmlns="http://www.w3.org/2000/svg">
+            <title>Album</title>
+            <path
+                d="M76.8 3.138v72.126H3.2V3.138h73.6zM80 0H0v78.398h80V0zM40 20.8c-9.72 0-17.6 7.88-17.6 17.6C22.4 48.12 30.28 56 40 56c9.72 0 17.6-7.88 17.6-17.6 0-9.72-7.88-17.6-17.6-17.6zm0 3.2c7.94 0 14.4 6.46 14.4 14.4S47.94 52.8 40 52.8s-14.4-6.46-14.4-14.4S32.06 24 40 24z"
+                fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+
+    </div>
+    <h1 class="album">Follow your first album</h1>
+    <p class="albumtext">Save albums by tapping the heart icon.</p>
+    <button class="btn btn-light  btn-lg" routerLink='/mayestro/search'>FIND ALBUMS</button>
+</div>
+
+
+<!-- <p>card works!</p> -->
+<div *ngIf="this.length>0">
+    <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-4">
+      <div class="p-2">
+        <a class="card card-deck" [routerLink]="['/mayestro/playlist',song.id,song.type]">
+          <img class="card-img-top" src={{song.image}} alt="Card image">
+          <div class="card-body p-0 pt-2">
+            <h4 class="card-title txt mb-1"> {{song.name}} </h4>
+            <button class="stretch-link bton "><i class="fa fa-play ic"></i></button>
+            <p class="card-text"> {{song.artists[0].name}} </p>
+          </div>
+        </a>    
+      </div>
+    </div>
+  </div>
+  
+  

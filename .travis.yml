@@ -1,0 +1,36 @@
+language: node_js 
+node_js: node
+sudo: required
+
+addons:
+  chrome: stable
+
+branches:
+  only:
+    - master
+
+
+install:
+  - npm install
+  - npm install -g @angular/cli@8.3.5
+
+script:
+  - ng test --watch false --browsers ChromeHeadless
+
+before_deploy:
+  - chmod 400 testaws.pem
+  - eval "$(ssh-agent -s)"
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: bash deploy.sh
+  on:
+    branch: master
+
+notifications:
+  email:
+    recipients:
+      - linaayman99@gmail.com
+      - ahmhelmhalm@gmail.com
+    on_success: change
+    on_failure: change        

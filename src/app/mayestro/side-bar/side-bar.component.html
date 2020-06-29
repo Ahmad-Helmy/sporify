@@ -1,0 +1,55 @@
+<nav class="navbar  flex-column flexnav ">
+    <div class="navbar-brand text-white font-weight-bold brand">
+        Maestro
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-link n-list">
+            <a class="nav-link text-white" routerLink="/mayestro/home">
+                <i class="fa fa-home"></i>
+                Home
+            </a>
+        </li>
+        <li class="nav-link n-list">
+            <a class="nav-link text-white" routerLink="/mayestro/search">
+                <i class="fa fa-search"></i>
+                Search
+            </a>
+        </li>
+        <li class="nav-link n-list">
+            <a class="nav-link text-white" routerLink='yourlibrary/playlists'>
+                <i class="fa fa-film"></i>
+                Your Library
+            </a>
+        </li>
+        <li class="nav-item playlist">
+            PLAYLISTS
+        </li>
+        <li class="nav-link n-list">
+            <button class="nav-link text-white"  style="background-color: black; border: none; outline: none;" (click)="openDialog()">
+                <i class="fa fa-plus-square"></i>
+                Create PlayList
+            </button>
+        </li>
+        <li class="nav-link n-list">
+            <a class="nav-link text-white" routerLink="/mayestro/LikedSongs">
+                <i class="fa fa-heart"></i>
+                Liked Songs
+            </a>
+        </li>
+        
+        <hr class="divider">
+        <div style="overflow-y: scroll; display: block; height: 90px; ">
+            <li  class="nav-link n-list" *ngFor="let item of MyPlaylist" >
+                <a class="nav-link text-white" [routerLink]="['/mayestro/playlist',item.id,item.type]">
+                    {{item.name}}
+                </a>
+            </li>
+        </div>
+        
+    </ul>
+    <button class=" w3-round-large install">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <a class="Download" routerLink="/mayestro/download"> Install App </a>
+    </button>
+    
+</nav>

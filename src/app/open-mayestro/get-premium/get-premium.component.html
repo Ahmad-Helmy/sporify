@@ -1,0 +1,43 @@
+<div class="text-center">
+    <app-get-premium-header></app-get-premium-header>
+    <div class="cardContainer">
+        <div   style="margin-top: 32px; ">
+            Your plan
+            <a routerLink="./../../changeplan" style="color: #616161;padding-left: 20%; font-weight: 400;text-decoration: underline;">Change plan</a>
+        </div>
+        <div style="margin-top: 10px; margin-bottom: 20px;" *ngIf="monthly">
+            <div class="card" style=" border-radius: 5px; box-shadow: none;background-color: #F8F8F8; text-align: left;">
+                <div class="container" style=" display: block; padding: 16px;">
+                  <p class="card-badge">1-month free trail</p> 
+                  <h3 style="font-size: 16px;font-weight: 550;">Spotify Premium</h3>
+                  <h4 style="font-size: 15px; font-weight: 450; margin-top: -14px;"> 49.99 EGP <span style="font-size: 13px; font-weight: 500;"> / month after trial</span> </h4>
+                  <h4 style="font-size: 12px; margin-top: -10px; margin-bottom: -5px;">Cancel anytime.<a style=" text-decoration: underline; cursor: pointer;" href="https://www.spotify.com/eg-en/legal/premium-promotional-offer-terms/">Offer terms </a>apply.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" style=" border-radius: 5px; box-shadow: none;background-color: #F8F8F8; text-align: left; margin-top: 10px;" *ngIf="yearly">
+            <div class="container" style=" display: block; padding: 16px;">
+              <h3 style="font-size: 16px;font-weight: 550;">Spotify Premium Yearly</h3>
+              <h4 style="font-size: 15px; font-weight: 450; margin-top: -14px;"> 599.88 EGP <span style="font-size: 13px; font-weight: 500;"> / month after trial</span> </h4>
+              <h4 style="font-size: 12px; margin-top: -10px; margin-bottom: -5px;"><a style=" text-decoration: underline; cursor: pointer;">Offer terms </a>apply.</h4>
+            </div>
+        </div>
+        <div class="card" style=" border-radius: 5px; text-align: left; margin-top: 30px;">
+            <div class="container" style=" display: block; padding: 30px;">
+                <div *ngIf='errMsg' class="row alert alert-danger bg-danger">
+                    <p class="col-12 mb-0 text-white">{{errMsg}}</p>
+                </div>
+                <form  class="pro-form" #f="ngForm" (ngSubmit)="submit(f)">
+                    <div class="form-group items">
+                      <label  for="email" style="font-size: 20px;font-weight: 550;padding-bottom: 20px;"> Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com" style="font-size: 16px;"  required ngModel name="email" #e="ngModel" > 
+                      <div class="alert alert-danger" *ngIf="e.touched && !e.valid">Email is required </div>
+                      <button type="submit" class="btn btn-lg btn-block" style="margin-top: 30px;" [disabled]="!f.valid">START MY MAYESTRO PREMIUM</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

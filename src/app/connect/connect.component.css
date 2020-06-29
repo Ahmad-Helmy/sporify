@@ -1,0 +1,12 @@
+.router{
+    /* margin-top: 80px; */
+    min-height: 1000px;
+    background-color: white;
+    width: 100%;
+}
+.header{
+    background-color: white;
+}
+.connecting{
+    margin-bottom: 500px;
+}

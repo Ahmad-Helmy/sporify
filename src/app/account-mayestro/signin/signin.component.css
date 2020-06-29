@@ -1,0 +1,104 @@
+.custom-btn{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    min-width: 160px;
+    padding: 16px 14px 18px;
+    border-radius: 500px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+h5,h4{
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 900;
+    line-height: 1.1;
+    color: inherit;
+}
+.fa{
+    background-color: white;
+    size: 30px;
+    color: #3b5998;
+}
+.login-btn{
+    width: 50%;
+}
+.login-btn:hover{
+    background-color: #1ED760;
+}
+a{
+    text-decoration: none;
+}
+.forgot-password:hover,.imp-text:hover{
+    color:#1ED760 ;
+}
+.facebook-btn{
+    background-color: #3b5998;
+}
+.facebook-btn:hover{
+    background-color: #3a61b3;
+}
+.signub-btn{
+    border: 2px solid#616467;
+    background-color: white;
+    color:#616467;
+    font-size: 14px;
+    font-weight: 500;
+}
+.signub-btn:hover{
+    color: white;
+    background-color: #616467;
+}
+.remember{
+    line-height: 1.5;
+    color: #919496;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+::ng-deep .mat-checkbox .mat-checkbox-frame {
+    border-color: #1db954;
+  }
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+ .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background ,
+ .login-btn{
+    background-color:#1db954;
+}
+.or::after{
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: #d9dadc;
+    position: absolute;
+    top: 42%;
+    right: 0;
+}
+.or::before{
+    content: '';
+    width: 45%;
+    height: 1px;
+    background-color: #d9dadc;
+    position: absolute;
+    top: 42%;
+    left: 0;
+}
+.or{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.forgot-password,.imp-text{
+    color: #1db954;
+}
+
+.signin{
+    font-family: circular-spotify-ui,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    width: 450px;
+    position: relative;
+}
+p{
+    font-size: .7em;
+    color: #c1c3c6;
+    text-align: center;
+}

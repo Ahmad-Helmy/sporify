@@ -1,0 +1,64 @@
+<div class= "Queue"> 
+<h1 class="queue"> Play Queue </h1>
+<p class= "now" *ngIf="this.playerservice.queue"> Now Playing </p>
+<div style=" background: repeat-x scroll center top rgb(18,18,18) ;">
+    <div class= "row track" style="list-style-type:none;">
+            <svg *ngIf="this.playerservice.queue"[style.color]="'rgb(25, 206, 88)'" class="bi bi-music-note-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        <div class="col-8" [style.color]="'rgb(25, 206, 88)' ">
+            {{name}} <br>
+            <a href=# style="color: gray;"> {{artist}}</a>
+        </div>
+        <div class="col-1" [style.color]="'rgb(25, 206, 88)'"
+            style="margin-left: 60px;">
+            <p>{{duration}}</p>
+        </div>
+    </div>
+</div>
+<p class="next" *ngIf="this.playerservice.queueexist"> Next in Queue </p>
+<ol *ngFor="let queue of queuesongs" class="tracks">
+    <div class="tracks" style=" background: repeat-x scroll center top rgb(18,18,18) ;">
+        <li class="row" style="list-style-type:none;">
+            <svg [style.color]="'white'" class="bi bi-music-note-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            <div class="col-8" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' ">
+                {{queue.name}} <br>
+                <a href=# style="color: grey;"> {{queue.artists[0].name}}</a>
+            </div>
+            <div class="col-1" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' "
+                style="margin-left: 60px; font-size: 1.2vw" >
+                <p>{{queue.duration}}</p>
+            </div>
+        </li>
+    </div>
+</ol>
+<p class="next" *ngIf="exists" > Next Up </p>
+<ol *ngFor="let song of songs" class="tracks">
+    <div class="tracks" style=" background: repeat-x scroll center top rgb(18,18,18) ;">
+        <li class="row" style="list-style-type:none;">
+            <svg [style.color]="'white'" class="bi bi-music-note-list" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M12 3v10h-1V3h1z"/>
+                <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"/>
+                <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            <div class="col-8" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' ">
+                {{song.name}} <br>
+                <a href=# style="color: grey;"> {{song.artists[0].name}}</a>
+            </div>
+            <div class="col-1" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' "
+                style="margin-left: 60px; font-size: 1.2vw" >
+                <p>{{song.duration}}</p>
+            </div>
+        </li>
+    </div>
+</ol>
+</div>

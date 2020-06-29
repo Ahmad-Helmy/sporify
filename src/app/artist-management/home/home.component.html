@@ -1,0 +1,20 @@
+<div *ngIf="artist">
+    <div class="row cover" [ngStyle]="{'background-image': 'url('+artist.coverUrl+')','background-size':'100% 100%'}">
+        <div class="profile-pic">
+            <img class="h-100 w-100 rounded-circle" [src]="artist.imgUrl" alt="">
+        </div>
+    </div>
+    <div class="row name">
+        <h1 class="col-12 d-flex font-weight-bolder justify-content-center">{{artist.name}}</h1>
+    </div>
+</div>
+<div *ngIf="songs" class="row mt-5">
+    <div class="col-12">
+        <app-cards-container [title]="'My Songs'" [cards]="songs" [type]="'s'"></app-cards-container>
+    </div>
+</div>
+<div *ngIf="albums" class="row mt-5">
+    <div class="col-12">
+        <app-cards-container [title]="'My Albums'" [cards]="albums" [type]="'a'"></app-cards-container>
+    </div>
+</div>

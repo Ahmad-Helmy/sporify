@@ -1,0 +1,42 @@
+<div class="container">
+    <img src="https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png" alt="Liked Songs" class="likedsongs"
+        srcset="https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png 150w, https://t.scdn.co/images/3099b3803ad9496896c43f22fe9be8c4.png 300w"
+        sizes="(min-width: 1280px) 232px, 192px">
+    <h1 class="Liked" font-size="(min-width: 1280px) 232px, 192px">Liked Songs </h1>
+    <div class="playlist">
+        <ol *ngFor="let song of songs" >
+            <div style=" background: repeat-x scroll center top rgb(18,18,18) ;" >
+                <li class="row track" style="list-style-type:none;">
+                    <div >
+                        <button (click)="play(song)" class="playbutton"><i class="fa fa-play"></i></button>
+                        
+                    </div>
+                    <div class="col-8" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' " >
+                        {{song.name}} <br>
+                       <a href=#  style="color: white;"> {{song.artists[0].name}}</a>
+                    </div>
+                    <div class="col-1 button" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' " >
+                        <mat-menu #menu="matMenu" class="dropdownmenu">
+                            <button mat-menu-item [matMenuTriggerData]="MyPlaylist" [matMenuTriggerFor]="submenu" class="text-white" style="outline: 0;" >Add to playlist</button>
+                            <button mat-menu-item class="text-white" style="outline: 0;"  (click)="Sendsong(song)" (click)="delete()">Remove from Liked Songs</button>
+                            <button mat-menu-item class="text-white" style="outline: 0;" (click)="addtoqueue()">Add to Queue</button>
+                            <button mat-menu-item *ngIf="type=='myplaylist'" class="text-white" style="outline: 0;" (click)="remove()">Remove song from playlist</button>
+                        </mat-menu>
+                        <button mat-button [matMenuTriggerFor]="menu" class="more-button" (click)="Sendsong(song)">...</button>
+                        <mat-menu #submenu="matMenu" class="dropdownmenu">
+                                <button mat-menu-item class="text-white" *ngFor="let item of MyPlaylist" style="outline: none;" (click)="SendID(item)"  (click)="add()" >
+                                    {{item.name}}
+                                </button>
+                        </mat-menu>
+                    </div>
+                    <div class="col-1" [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' " style="margin-left: 60px;">
+                       <p>{{song.duration}}</p>
+                    </div>
+                </li>
+                
+            </div>
+      
+        
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+
+<table class="table table-borderless table-hover table-sm" (click)="play()"  style ="margin-bottom: -0.1px;">
+    <!-- <tbody> -->
+        <tr>
+            <td class="fa " style="font-size: 20px; width: 20%;padding-top: 20px;" [style.color]="isPlaying ? '#1fa14d' :'gray' "> {{isPlaying?'&#xf04b;':'&#9834;'}} </td>
+            <td style="width:6% "><img [src]="song.image" style=" width: 50px; height: 50px;"></td>
+            <td class="song-name" style="width:21%; padding-top: 20px;"  [style.color]="isPlaying ? '#1fa14d' :'white' " >{{song.name}}</td>
+            <td style="width: 60%;text-align: right;"><button class="song-more-btn" >...</button> </td>
+            <td [style.color]="isPlaying ? '#1fa14d' :'gray' " style=" font-size: 16px; width: 10%;padding-top: 20px;">{{song.duration}} </td>
+        </tr>
+    <!-- </tbody>   -->
+</table>

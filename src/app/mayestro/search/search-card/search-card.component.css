@@ -1,0 +1,84 @@
+.c {
+  display: inline-flex;
+}
+.card {
+  height: 100%;
+}
+.img {
+  transform: rotate(25deg) translate(18%, -2%);
+  right: 0;
+  bottom: 0;
+  float: right;
+  width: 50%;
+  height: 50%;
+}
+
+.pad {
+  height: 100%;
+}
+
+.teet {
+  overflow: hidden;
+  background-color: rgb(160, 195, 210);
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+}
+.teet2 {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4));
+  color: #fff;
+  opacity: 1;
+}
+.title {
+  font-size: 24px;
+  min-height: 65px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 1.3em;
+  letter-spacing: -0.04em;
+  overflow-wrap: break-word;
+  font-weight: bold;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, Helvetica,
+    Arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+}
+
+.podcast:hover {
+  text-decoration: none;
+}
+.podcast {
+  overflow: hidden;
+  /* background-color: rgb(245, 155, 35); */
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.charts {
+  overflow: hidden;
+  background-color: rgb(75, 145, 125);
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.discover {
+  overflow: hidden;
+  background-color: rgb(180, 155, 200);
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+}

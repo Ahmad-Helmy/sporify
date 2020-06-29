@@ -1,0 +1,49 @@
+<div >            
+    
+    <div class="container-fluid bg-1" 
+    *ngIf= "artistInfo" [ngStyle] ="{'background':' linear-gradient(to top, #121212,70%, transparent),url('+ artistInfo.img +') no-repeat center'}" >
+ 
+        <span class="spancontent" >449,856  Monthly Listeners</span>
+        <h1 class="ArtistName"   >{{artistInfo.name}}</h1>
+        <div class="buttonContainer ">
+            
+            <button class="button-scss b"  type="button" (click)=pLay()>{{isPalyed?'Play':'Pause'}}</button>
+            <button *ngIf="isFollowed"  type="button" class="button-scss fb" style="background-color: transparent; border: 2px solid #fff; " [style.color]="isFollowed ? 'white':'#1fa14d' " type="button"  (click)="follow()" > Follow</button>
+            <button *ngIf="!isFollowed"  type="button" class="button-scss fb" style="background-color: transparent; border: 2px solid #fff; " [style.color]="isFollowed ? 'white':'#1fa14d' " type="button"  (click)="unfollow()" > UnFollow</button>
+            <div  style="display: inline;">
+                <button type="button" title="More" class="moreButton">...</button>
+
+                <!-- <button mat-button [matMenuTriggerFor]="menu" class="dropmenu">
+                    <i class="fa fa-user usericon"></i>
+                    ...
+                    <i class="fa fa-sort-down usericon-up" ></i>
+                </button>
+                  <mat-menu #menu="matMenu" class="dropdownmenu">
+                    <a mat-menu-item class="items">Start Radio</a>
+                    <a mat-menu-item class="items">Follow</a>
+                    <a mat-menu-item class="items">Copy Artist Link</a>
+                    <a mat-menu-item class="items">Open In Desktop App</a>
+                  </mat-menu> -->
+                  
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            
+            <li style="display: inline-block;">
+                <a  [routerLink]="['overview']" aria-current="page" class="uc " style="background-color: #333;"  >Overview</a>
+            </li>
+            <li style="display: inline-block;">
+                <a  [routerLink]="['related']" class="uc" style="cursor: pointer;">Related Artists</a>
+            </li>
+            <li style="display: inline-block;">
+                <a  [routerLink]="['about']" class="uc">About</a>
+            </li>
+            
+        </nav>   
+    </div>       
+</div>

@@ -1,0 +1,148 @@
+.addmusicicon {
+    color: white;
+    overflow: hidden;
+    -webkit-box-direction: normal;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 6%;
+    height: 6%;
+  }
+  h1.firstplaylist {
+    margin-top: 2px;
+    color: white;
+    position: right;
+    overflow: hidden;
+    font-family: spotify-circular, spotify-circular-cyrillic,
+      spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, Helvetica,
+      Arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    font-weight: 700;
+    /* line-height: 36px; */
+    letter-spacing: -0.04em;
+    text-transform: none;
+  }
+  .text {
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-family: spotify-circular, spotify-circular-cyrillic,
+      spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, Helvetica,
+      Arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+    margin-bottom: 2px;
+    font-weight: 200;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    font-size: 1.2vw;
+  }
+  .btn {
+    line-height: 28px;
+    font-weight: 550;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    border-radius: 500px;
+    color: black;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: white;
+    box-sizing: border-box;
+    width: 20%;
+    font-size: 0.9vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    text-align: center;
+  }
+  .container {
+    padding-top: 1px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-size: 5vw;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  ::ng-deep .mat-dialog-container {
+    color: #ffffff;
+  
+    background-color: rgb(61, 60, 60);
+  }
+  
+
+  .img {
+    flex: 60%;
+    user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: #282828;
+    position: relative;
+    padding: 20px 20px 16px;
+    border-radius: 8px;
+    isolation: isolate;
+    box-sizing: border-box;
+    min-height: 70%;
+    cursor: pointer;
+    z-index: 5;
+    text-decoration: none;
+  }
+  .card-body {
+    height: 100px;
+    color: rgb(18, 18, 18);
+    color: #b3b3b3;
+    font-family: Helvetica, Arial, sans-serif;
+    word-break: break-all;
+  }
+  .bton {
+    display: none;
+    background-color: #1db954;
+    border: none;
+    border-radius: 50%;
+    /* height: 50%;
+    width: 40%; */
+    flex: 30%;
+    z-index: 7;
+    transform: scale(1.06);
+    transition: all transform 33ms cubic-bezier(0.3, 0, 0, 1);
+    right: 5%;
+    bottom: 5%;
+    float: right;
+  }
+  .ic {
+    color: #fff;
+    object-position: center;
+  }
+  .card:hover .bton {
+    display: inline;
+    position: absolute;
+  }
+  .bton:hover {
+    transform: scale(1.06);
+  }
+  .txt {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  

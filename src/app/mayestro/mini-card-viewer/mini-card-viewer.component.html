@@ -1,0 +1,13 @@
+<div class="row m-0 ">
+    <a [routerLink]="['/mayestro/seeall',category.name]" class="testing catName">{{category.name}}</a>
+    <a class="seeall" [routerLink]="['/mayestro/seeall',browse,category.name]">SEE ALL</a>
+</div>
+<div class="row m-0 txt">
+    <p>{{category.description}}
+    </p>
+</div>
+<div class="row px-4 txt">
+    <div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let c of cards |slice:0:6">
+        <app-card [card]="c" [search]="search"></app-card>
+    </div>
+</div>

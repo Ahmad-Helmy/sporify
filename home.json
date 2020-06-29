@@ -1,0 +1,88 @@
+{
+  "recentlyPlayed": [
+    {
+      "artists": [
+        {
+          "name": "Amr Diab"
+        }
+      ],
+      "type": "track",
+      "image": "ur",
+      "id": "id",
+      "name": "name"
+    },
+    {
+      "type": "playlist",
+      "description": "dessss",
+      "id": "id",
+      "image": "image",
+      "name": "jdjhjhdjd"
+    }
+  ],
+  "workout": {
+    "name": "WorkOut",
+    "description": "fvbvfnbvhbh",
+    "playlists": [
+      {
+        "type": "playlist",
+        "description": "dessss",
+        "id": "id",
+        "image": "image",
+        "name": "jdjhjhdjd"
+      }
+    ]
+  },
+  "chill": {
+    "name": "Chill",
+    "description": "fvbvfnbvhbh",
+    "playlists": [
+      {
+        "type": "playlist",
+        "description": "dessss",
+        "id": "id",
+        "image": "image",
+        "name": "jdjhjhdjd"
+      }
+    ]
+  },
+  "sad": {
+    "name": "Chill",
+    "description": "fvbvfnbvhbh",
+    "playlists": [
+      {
+        "type": "playlist",
+        "description": "dessss",
+        "id": "id",
+        "image": "image",
+        "name": "jdjhjhdjd"
+      }
+    ]
+  },
+  "playlists": [
+    {
+      "type": "playlist",
+      "description": "dessss",
+      "id": "id",
+      "image": "image",
+      "name": "jdjhjhdjd"
+    }
+  ],
+  "popularPlaylists": [
+    {
+      "type": "playlist",
+      "description": "dessss",
+      "id": "id",
+      "image": "image",
+      "name": "jdjhjhdjd"
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "playlist",
+      "description": "dessss",
+      "id": "id",
+      "image": "image",
+      "name": "jdjhjhdjd"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+@keyframes loading {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(2000px, 0);
+  }
+}
+
+.loading {
+  z-index: 100000;
+  background-color: gray;
+  height: 5px;
+}
+
+.loading-icon {
+  width: 200px;
+  height: 5px;
+  background-color: tomato;
+  animation-name: loading;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

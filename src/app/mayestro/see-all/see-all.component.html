@@ -1,0 +1,10 @@
+<div id="seeAll" *ngIf="completed" [ngStyle]="{'background-image' : 'linear-gradient('+color+',rgb(18,18,18))'}">
+    <div class="row m-5">
+        <div class="catName">{{category.name}}</div>
+    </div>
+    <div class="px-4 txt">
+        <div class="col-lg-2 col-md-3 col-sm-4" *ngFor="let c of cards">
+            <app-card [card]="c"></app-card>
+        </div>
+    </div>
+</div>

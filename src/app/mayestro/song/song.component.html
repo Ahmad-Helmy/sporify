@@ -1,0 +1,17 @@
+<div class="playlist" >
+    <table class="table table-hover" >
+        <tr  (click)="play()">
+            <td style="width: 20px;" >
+                <img  src="https://rlv.zcache.co.nz/white_music_8th_note_on_black_background_key_ring-r1e442478e5d048b784a77ea6b012b548_x7j3z_8byvr_307.jpg?rvtype=content"
+            
+                height="18" width="16" />
+                
+            </td>
+            <td style="width: 455px;"><p [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' " >song name</p>
+                <a style="color: rgb(211, 204, 204);">artist</a></td>
+            <td ><button class="more-button">...</button></td>
+            <td [style.color]="isPlaying ? 'rgb(25, 206, 88)' :'white' " > time</td>
+        </tr>
+        
+    </table>
+</div>

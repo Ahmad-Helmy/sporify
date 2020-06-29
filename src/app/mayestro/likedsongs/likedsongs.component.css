@@ -1,0 +1,99 @@
+.likedsongs {
+  width: 20%;
+  height: auto;
+  margin-left: 1px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  -webkit-box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  padding-right: 5px;
+  margin-right: 10px;
+  text-align: left;
+}
+h1.Liked {
+  overflow: hidden;
+  margin-left: 280px;
+  color: white;
+  font-family: spotify-circular, spotify-circular-cyrillic,
+    spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, Helvetica,
+    Arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
+  font-size: 3vw;
+  margin-top: -200px;
+  margin-bottom: 100px;
+  padding-bottom: 5px;
+}
+.container {
+  width: 100%;
+  top: 50px;
+  padding-left: 50px;
+  /* position: fixed;  */
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  min-height: 1000px;
+}
+.playlist{
+  background: rgb(18,18,18);
+  position: relative;
+  top: 100px;
+  min-height:auto; 
+}
+.track{
+color: white;
+height: 70px;
+padding: 10px 10px;
+}
+
+.track:hover{
+  background-color:rgb(61, 60, 60);
+  outline: 0;
+}
+.more-button{
+  font-size: 30px;
+  background-color: rgb(18,18,18);
+  border:rgb(18,18,18);
+  color:white;
+  width: 48px;
+  height: 48px;
+  line-height: 48px ;
+  outline: 0;
+}
+
+
+.track:hover .more-button{
+  background-color:rgb(61, 60, 60);
+  outline: 0;
+}
+
+::ng-deep .dropdownmenu{
+  
+  background-color:rgb(61, 60, 60);
+}
+
+::ng-deep .mat-snack-bar-container{
+  color: #ffffff;
+  background-color: rgb(0, 89, 255);
+  width: 100px;
+}
+
+i{
+color: #1db954;   
+outline: none;
+border: none;
+}
+.playbutton{
+  height:2px; 
+  width:2px;
+  background-color: rgb(18,18,18);
+  border: none;
+  outline: none;
+}
+.track:hover .playbutton{
+  background-color:rgb(61, 60, 60);
+  outline: 0;
+}
+
+.track:hover .i{
+  background-color:rgb(61, 60, 60);
+  outline: 0;
+}

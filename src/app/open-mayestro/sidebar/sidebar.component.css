@@ -1,0 +1,43 @@
+.sidebar{
+    background-color: rgb(27, 26, 26);
+    padding-right: 30px;
+    color: white;
+    height: 800px;
+}
+.profile-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    left:50px
+}
+.head{
+    width: 195px;
+    height: 100px;
+}
+.items{
+    list-style-type:none;
+    padding: 30px 20px;
+}
+.item{
+    padding: 30px 20px;
+    border-bottom: 1px solid  rgb(192, 188, 188);
+    border-bottom-width: thin;
+}
+.fa{
+    font-size: 20px;
+    color: rgb(221, 220, 220);
+    padding-right: 20px;
+}
+.link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.link{
+    color:rgb(221, 220, 220);
+    padding-left: 10px;
+    font-size: 15px;
+}

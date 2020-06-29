@@ -1,0 +1,38 @@
+
+body{
+    height: auto;
+    background-color: #121212;
+  }
+  
+  .artist-songs{
+      margin-left: 24px;
+      margin-right: 24px;
+  }
+  
+  .artist-popular{
+  
+      background-color: #121212;
+      padding-bottom: 16px;
+      
+  
+  }
+  
+  .artist-albums{
+      /* margin-top: 16px;
+      margin-bottom: 16px; */
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 24px;
+  }
+  
+  .showmore-btn {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .showmore-btn:hover{
+      transform: scale(1.05,1.05);
+      border: none;
+  }

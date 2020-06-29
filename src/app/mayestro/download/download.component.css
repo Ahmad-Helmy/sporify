@@ -1,0 +1,49 @@
+.downloading {
+  line-height: 28px;
+  font-weight: 550;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  border: 6px solid transparent;
+  border-radius: 500px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 30%;
+  font-size: 0.95vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  text-align: center;
+  background-color: #1ed760;
+  font-family: url("https://sp-bootstrap.global.ssl.fastly.net/8.12.4/fonts/circular-bold.woff2");
+  outline: none;
+}
+.image {
+  width: 45%;
+}
+.link {
+  color: white;
+}
+.text1 {
+  font-size: 2.3vw;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: -0.36px;
+  color: #fff;
+  margin: 16px 0;
+}
+.text2 {
+  font-size: 1.4vw;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -0.36px;
+  color: #fff;
+  margin: 16px 0;
+}
+.container {
+  margin-top: 150px;
+  text-align: center;
+  min-height: 590px;
+  width: 100%;
+}
